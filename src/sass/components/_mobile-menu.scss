@@ -1,6 +1,8 @@
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  transform: translateX(100%);
+  
   top: 0;
   left: 0;
   z-index: 100;
@@ -9,6 +11,12 @@
   width: 100vw;
   height: 100vh;
   background: rgba(17, 21, 24, 0.9);
+  transform: translateX(100%);
+
+  @include for-tablet-up {
+    display: none;
+  }
+
 }
 
 .mobile-menu.is-open {
@@ -17,6 +25,7 @@
 
 .mobile-head {
   display: flex;
+  margin-bottom: 50px;
 }
 
 .mobile-menu__btn--close {
@@ -26,8 +35,40 @@
 
   border: none;
   background-color: transparent;
+  fill: $secondary-title-color;
+}
+
+.mobile-nav {
+  margin-bottom: 50px;
+}
+
+.mobile-nav_item {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.mobile-nav_link {
+  @include font-silo (800, 20px, 1.8, 0.03em, $secondary-title-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .mobile-btn {
-  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  
+  
+  color: $accent-color;
+  background-color: transparent;
+  border-color: $accent-color;
+
+  @include for-tablet-up {
+    display: none;
+  }
 }

@@ -1,0 +1,22 @@
+.btn {
+  @include centeredFlex;
+
+  padding-top: 14px;
+  padding-bottom: 14px;
+  
+  min-width: 260px;
+  height: 48px;
+
+  @include font-silo (700, 12px, 1.21, 0.08em,$secondary-title-color);
+  text-transform: uppercase;
+  background-color: $accent-color;
+  border-color: transparent;
+
+  @include for-desktop-up {
+  padding: 26px 25px;
+  min-width: 354px;
+  height: 70px;
+
+  @include font-silo (700, 14px, 1.21, 0.14em,$secondary-title-color);
+  }
+}
