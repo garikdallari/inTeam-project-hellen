@@ -4,3 +4,21 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+
+@import '../sass/utils/base';
+@import '../sass/utils/mixins';
+@import '../sass/utils/vars';
+
+@import '../sass/components/about';
+@import '../sass/components/header';
+@import '../sass/components/advantages';
+@import '../sass/components/benefits';
+@import '../sass/components/contacts';
+@import '../sass/components/footer';
+@import '../sass/components/guarantee';
+@import '../sass/components/hero';
+@import '../sass/components/howwedo';
+@import '../sass/components/problems';
+@import '../sass/components/program';
+@import '../sass/components/reviews';
+@import '../sass/components/mobile-menu';
