@@ -58,16 +58,16 @@
     }
   }
 
-  // @include for-1680-up {
-  //   min-width: 1680px;
-  //   padding-left: 183px;
-  //   padding-right: 183px;
-  //   padding-bottom: 176px;
-  //   background: {
-  //     repeat: no-repeat;
-  //     size: 674px 502px;
-  //   }
-  // }
+  @include for-1680-up {
+    min-width: 1680px;
+    padding-left: 183px;
+    padding-right: 183px;
+    padding-bottom: 176px;
+    background: {
+      repeat: no-repeat;
+      size: 674px 502px;
+    }
+  }
 }
 
 .program__title {
