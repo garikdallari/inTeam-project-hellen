@@ -1,6 +1,5 @@
 .benefits {
-  background-image: linear-gradient(to top, $secondary-title-color 62%,  $primary-title-color 38%);
-  
+  background-image: linear-gradient(to top, $secondary-title-color 62%,  $primary-title-color 38%);  
 
   @include for-desktop-up {
     background-image: none;
@@ -98,6 +97,7 @@
     position: absolute;
     top: -199px;
     left: 0;
+
     padding-left: 44px;
     padding-bottom: 70px;
     padding-top: 38px;
