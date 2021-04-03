@@ -11,7 +11,7 @@
 
 // @include for-desktop-up;
 @mixin for-desktop-up {
-  @media screen and (min-width: 1280px) { @content; }
+  @media screen and (min-width: 1394px) { @content; }
 }
 
 // @include for-1680-up;
