@@ -1,0 +1,32 @@
+.guarantee {
+  width: 100%;
+  color: $primary-title-color;
+  padding: 0px 15px;
+}
+
+.guarantee h2 {
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 34px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  @include for-desktop-up {
+    font-size: 46px;
+    line-height: 60px;
+  }
+}
+.guarantee__list {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: $garant-bg-color;
+  @include for-desktop-up {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
