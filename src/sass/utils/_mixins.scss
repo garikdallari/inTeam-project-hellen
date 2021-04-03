@@ -1,0 +1,53 @@
+// ===== Медиа запросы ===== 
+// @include for-phone-only;
+@mixin for-phone-only {
+  @media screen and (max-width: 767px) { @content; }
+}
+
+// @include for-tablet-up;
+@mixin for-tablet-up {
+  @media screen and (min-width: 768px) { @content; }
+}
+
+// @include for-desktop-up;
+@mixin for-desktop-up {
+  @media screen and (min-width: 1280px) { @content; }
+}
+
+// ===== Центрирование флексами =====
+// @include centeredFlex;
+@mixin centeredFlex($type: flex) {
+  display: $type;
+  justify-content: center;
+  align-items: center;
+} 
+
+// ===== Анимация =====
+// @include transition(transform);
+@mixin transition($type) {
+  transition: $type $duration $timing-function;
+}
+
+// ===== Стили текста =====
+// @include font-silo (500, 24px, 1.667, 0.02em, $accent-color);
+@mixin font-silo ($weight, $size, $lh, $ls, $color) {
+  @if $weight {
+    font-weight: $weight;
+  }
+
+  @if $size {
+    font-size: $size;
+  }
+
+  @if $lh {
+    line-height: $lh;
+  }
+  
+  @if $ls {
+    letter-spacing: $ls;
+  }
+  
+  @if $color {
+    color: $color;
+  }
+}
