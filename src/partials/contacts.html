@@ -1,14 +1,18 @@
-<section>
-  <div>
-    <h2>Регистрация на бесплатную телефонную консультацию по нюансам ЗНО по английскому языку</h2>
-    <h3>
-      Оставь заявку на участие в бесплатном занятии. С вами свяжется консультант и ответит на
+<section class="contacts">
+  <div class="contacts-container">
+    <h2 class="contacts-title">Регистрация на <span class="contacts-title--accent">бесплатную</span> телефонную <span
+        class="contacts-title--accent">консультацию</span> по нюансам ЗНО по английскому языку</h2>
+    <h3 class="contacts-text">
+      Оставь заявку на участие в <span class="contacts-title--accent">бесплатном занятии.</span> С вами свяжется
+      консультант и ответит на
       вопросы
     </h3>
-    <form>
-      <input type="text" name="text" id="" placeholder="Имя*" />
-      <input type="tel" name="tel" placeholder="Телефон*" />
-      <button type="submit"></button>
+    <form class="contacts-form">
+      <span class="contacts-form__thumb"><input type="text" pattern="\D [^0-9]" class="contacts-form__input" name="text"
+          id="" placeholder="Имя*" /></span>
+      <span class="contacts-form__thumb"><input type="tel" pattern="\d [0-9]" class="contacts-form__input" name="tel"
+          placeholder="Телефон*" /></span>
+      <button type="submit" class="common__button common__button--cont">хочу на бесплатное занятие</button>
     </form>
   </div>
 </section>
