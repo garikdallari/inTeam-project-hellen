@@ -1,0 +1,22 @@
+.header-container {
+  display: flex;
+  position: absolute;
+  transform: translateY(30px);
+}
+
+.header-nav {
+  display: none;
+}
+
+.header-btn {
+  display: none;
+}
+
+.mobile-menu__btn--open {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+

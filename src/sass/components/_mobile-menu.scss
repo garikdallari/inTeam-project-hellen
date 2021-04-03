@@ -1,0 +1,33 @@
+.mobile-menu {
+  position: fixed;
+  transform: translateX(100%);
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 30px 20px;
+  
+  width: 100vw;
+  height: 100vh;
+  background: rgba(17, 21, 24, 0.9);
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+
+.mobile-head {
+  display: flex;
+}
+
+.mobile-menu__btn--close {
+  display: flex;
+  margin-left: auto;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+}
+
+.mobile-btn {
+  display: none;
+}
