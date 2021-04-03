@@ -14,6 +14,11 @@
   @media screen and (min-width: 1280px) { @content; }
 }
 
+// @include for-1680-up;
+@mixin for-1680-up {
+  @media screen and (min-width: 1680px) { @content; }
+}
+
 // ===== Центрирование флексами =====
 // @include centeredFlex;
 @mixin centeredFlex($type: flex) {
