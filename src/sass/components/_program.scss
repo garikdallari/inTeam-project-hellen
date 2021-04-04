@@ -90,7 +90,6 @@
 }
 
 .program__schedule {
-  outline: 1px solid red;
   position: relative;
   padding-left: 25px;
   margin: 0 auto;
@@ -117,7 +116,6 @@
 }
 
 .program__interval {
-
   &::before {
     content: counter(my-counter) ' '; /* Добавляем к числам пробел */
     counter-increment: my-counter; /* Задаём имя счетчика */
