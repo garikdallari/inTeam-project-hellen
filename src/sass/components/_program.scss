@@ -4,6 +4,8 @@
 }
 
 .container--program {
+  outline: 1px solid red;
+  
   padding-top: 50px;
   padding-bottom: 133px;
   margin: 0 auto;
@@ -29,9 +31,9 @@
 
     background: {
       image: url(../../images/images-tablet/program-tablet.png);
-      position: bottom 111px left 384px;
+      position: bottom 111px right 0;
       repeat: no-repeat;
-      size: 474px 301px;
+      size: 384px 280px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
