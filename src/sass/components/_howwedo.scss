@@ -1,0 +1,39 @@
+.howwedo {
+  padding: 50px 0px;
+}
+
+.howwedo__tittle {
+  @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.howwedo-list__item {
+  box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.howwedo-list__tittle {
+  @include font-silo(700, 14px, 1.42, 0.08em, $primary-title-color);
+}
+
+.howwedo-list__tittle::after {
+  display: flex;
+  margin: 16px auto;
+  content: '';
+  width: 20px;
+  height: 2px;
+  background-color: $accent-color;
+}
+
+.howwedo-list__text {
+  @include font-silo(500, 12px, 1.66, 0.08em, $primary-text-color);
+}
+
+.howwedo-list__icon {
+  fill: $accent-color;
+  margin-bottom: 20px;
+}
