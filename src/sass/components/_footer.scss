@@ -29,11 +29,13 @@
 }
 
 .footer-list__link--after::after {
-  content: '';
-  width: 0px;
-  height: 40px;
-  border: 1px solid $primary-text-color;
-  margin: 0px 25px;
+  @include for-tablet-up {
+    content: '';
+    width: 0px;
+    height: 40px;
+    border: 1px solid $primary-text-color;
+    margin: 0px 25px;
+  }
 }
 
 .footer-list__link:not(:last-of-type) {
