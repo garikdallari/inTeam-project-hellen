@@ -7,12 +7,12 @@
   }
 
   @media (min-width: 768px) {
-    width: 768px;
+    max-width: 768px;
     padding: 0 40px;
   }
 
   @media (min-width: 1344px) {
-    width: 1344px;
+    max-width: 1344px;
     padding: 0 15px;
   }
 }
@@ -69,4 +69,8 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+button, label {
+  cursor: pointer;
 }
