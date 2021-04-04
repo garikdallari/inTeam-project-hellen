@@ -15,6 +15,11 @@
 
   @include for-phone-only {
     max-width: 480px;
+    padding-bottom: 39px;
+  }
+
+  @include for-tablet-up {
+    padding-bottom: 50px;
   }
 
   @include for-desktop-up {
