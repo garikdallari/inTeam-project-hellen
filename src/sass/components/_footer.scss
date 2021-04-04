@@ -12,6 +12,10 @@
     flex-direction: initial;
     justify-content: space-between;
   }
+
+  @include for-desktop-up {
+    justify-content: flex-start;
+  }
 }
 
 .footer-list__item:first-child {
@@ -25,6 +29,10 @@
 .footer-list__item:last-child {
   @include for-tablet-up {
     display: flex;
+  }
+
+  @include for-desktop-up {
+    margin-left: 290px;
   }
 }
 
@@ -55,6 +63,10 @@
   @include for-tablet-up {
     @include font-silo(600, 20px, 1.2, 0.08em, $primary-title-color);
   }
+
+  @include for-desktop-up {
+    @include font-silo(600, 30px, 1.23, 0.08em, $primary-title-color);
+  }
 }
 
 .footer-list__logo {
@@ -76,4 +88,8 @@
 .sub-footer__text {
   @include font-silo(500, 14px, 2, 0.08em, $primary-text-color);
   text-align: center;
+
+  @include for-tablet-up {
+    text-align: start;
+  }
 }
