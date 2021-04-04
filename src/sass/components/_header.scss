@@ -4,6 +4,7 @@
   z-index: 10;
   transform: translateY(30px);
   width: 100%;
+  
 }
 
 .header-nav {
@@ -12,6 +13,11 @@
 
 .header-btn {
   display: none;
+
+  @include for-tablet-up {
+  display: inline-block;
+  margin-left: auto;
+  }
 }
 
 .mobile-menu__btn--open {
@@ -21,6 +27,7 @@
   border: none;
   background-color: transparent;
   
+
   &:hover,
   &:focus {
     fill: $accent-color;

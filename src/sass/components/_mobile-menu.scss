@@ -13,7 +13,7 @@
   background: rgba(17, 21, 24, 0.9);
   transform: translateX(100%);
 
-  @include for-tablet-up {
+  @include for-desktop-up {
     display: none;
   }
 
@@ -26,6 +26,23 @@
 .mobile-head {
   display: flex;
   margin-bottom: 50px;
+}
+
+.mobile__logo {
+  &--white {
+    @include for-tablet-up {
+      display: none;
+    }
+  }
+    
+  &--orange {
+    display: none;
+
+    @include for-tablet-up {
+      display: flex;
+    }
+  }
+
 }
 
 .mobile-menu__btn--close {
@@ -45,6 +62,10 @@
 
 .mobile-nav {
   margin-bottom: 50px;
+
+  @include for-tablet-up {    
+  margin-left: auto;
+  margin-right: auto;}
 }
 
 .mobile-nav_item {
@@ -57,6 +78,11 @@
 
 .mobile-nav_link {
   @include font-silo (800, 20px, 1.8, 0.03em, $secondary-title-color);
+
+  @include for-tablet-up {
+    font-size: 26px;
+  }
+
 
   &:hover,
   &:focus {

@@ -16,10 +16,10 @@
     background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
   }
   
-  background-position-x: -64px;
+  // background-position-x: -64px;
 
-  @include for-tablet-up {
-    background-position-x: 0;}
+  // @include for-tablet-up {
+  //   background-position-x: 0;}
 }
 
 .hero__title {
