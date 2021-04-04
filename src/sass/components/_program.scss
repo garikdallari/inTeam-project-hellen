@@ -90,11 +90,14 @@
 }
 
 .program__schedule {
+  outline: 1px solid red;
   position: relative;
   padding-left: 25px;
-  // margin-left: 74px;
+  margin: 0 auto;
 
-  // text-align: center;
+  @include for-phone-only {
+    max-width: 200px;
+  }
 
   list-style-type: none;
   counter-reset: my-counter;
@@ -102,6 +105,7 @@
   @include for-tablet-up {
     padding-left: 56px;
     margin-left: 63px;
+    width: 100%;
   }
 
   @include for-desktop-up {
@@ -113,9 +117,14 @@
 }
 
 .program__interval {
+
   &::before {
     content: counter(my-counter) ' '; /* Добавляем к числам пробел */
     counter-increment: my-counter; /* Задаём имя счетчика */
+  }
+
+  & + & {
+    margin-top: 40px;
   }
 
   @include font-silo(700, 14px, 2, 0.08em, $secondary-title-color);
@@ -259,7 +268,7 @@
   top: 10px;
   left: 0;
   width: 1px;
-  height: 91%;
+  height: 92%;
   border-left: 1px solid $secondary-title-color;
 
   @include for-tablet-up {
