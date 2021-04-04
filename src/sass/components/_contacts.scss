@@ -1,0 +1,202 @@
+.contacts {
+  background-color: $primary-title-color;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 1680px;
+  min-height: 507px;
+  margin-left: auto;
+  margin-right: auto;
+  background-repeat: no-repeat;
+  background-image: none,
+    url(/images/images-mobile/footer-mobile.png);
+  background-size: cover;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .contacts{
+      background-image: url(/images/images-mobile/footer-mobile@2x.png);
+      background-size: cover;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 1680px;
+    min-height: 520px;
+    padding-top: 50px;
+    padding-bottom: 71px;
+    background-image: none,
+      url(/images/images-tablet/footer-tablet.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .contacts {
+        background-image: url(/images/images-tablet/footer-tablet@2x.png);
+        background-size: cover;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1314px) {
+    max-width: 1680px;
+    min-height: 840px;
+    padding-top: 100px;
+    padding-bottom: 62px;
+    background-image: none,
+      url(/images/images-desktop/footer-desktop.png);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      .contacts {
+        background-image: url(/images/images-desktop/footer-desktop@2x.png);
+        background-size: cover;
+      }
+}
+}
+}
+
+.contacts-title {
+// @include font-Montserrat (800, 14px, 136%, 0.03em, $secondary-title-color);
+font-family: 'Montserrat', sans-serif;
+color: $secondary-title-color;
+font-style: normal;
+font-weight: 800;
+font-size: 14px;
+line-height: 136%;
+
+text-align: center;
+letter-spacing: 0.03em;
+margin-bottom: 30px;
+
+@media screen and (min-width: 768px) {
+  font-size: 26px;
+  line-height: 130%; 
+}
+
+@media screen and (min-width: 1344px) {
+  font-size: 46px;
+  margin-bottom: 50px;
+}
+
+.contacts-title--accent {
+color: $accent-color;
+}
+}
+
+.contacts-text {
+  font-family: 'Montserrat', sans-serif;
+  color: $secondary-title-color;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+  
+  .contacts-text--accent {
+    color: $accent-color;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 40px;
+  }
+  
+  @media screen and (min-width: 1344px) { 
+    font-size: 30px;
+    line-height: 56px;
+    }
+  }
+  
+  .contacts-form__input {
+    display: block;
+    width: 100%;
+    height: 48px;
+    margin-bottom: 20px;
+    padding-left: 28px;
+
+    color: $secondary-title-color;
+    background-color: transparent;
+    border-color: $secondary-title-color;
+
+    &::placeholder {
+      color: $secondary-title-color;
+    }
+  
+    &:last-child {
+      margin-bottom: 0;
+    }
+  
+    @media screen and (min-width: 768px) {
+      display: flex;
+      width: 390px;
+      height: 48px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    @media screen and (min-width: 1344px) {
+      width: 478px;
+      height: 70px;
+      padding-left: 40px;
+    }
+  }
+
+  .contacts-form__input:valid {
+    color: $secondary-title-color;
+  }
+
+  .contacts-form__input:invalid {
+    color: $secondary-title-color;
+    background-color: rgb(255, 0, 0);
+  }
+
+  .btn {
+    @include centeredFlex;
+  
+    padding-top: 14px;
+    padding-bottom: 14px;
+    
+    min-width: 260px;
+    height: 48px;
+  
+    @include font-silo (700, 12px, 1.21, 0.08em,$secondary-title-color);
+    text-transform: uppercase;
+    background-color: $accent-color;
+    border-color: transparent;
+  
+    @include for-desktop-up {
+    padding: 26px 25px;
+    min-width: 354px;
+    height: 70px;
+  
+    @include font-silo (700, 14px, 1.21, 0.14em,$secondary-title-color);
+    }
+  }
+
+    .btn--differences {
+  display: flex;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 50px;
+  
+  @media screen and (min-width: 768px) {
+    margin-top: 31px;
+  }
+
+  @media screen and (min-width: 1344px) {
+  margin-top: 80px;
+  }
+}
+
