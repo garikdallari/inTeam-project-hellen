@@ -1,20 +1,20 @@
 .container {
   min-width: 320px;
-  max-width: 1600px;
 
   @media (min-width: 320px) {
-    min-width: 320px;
+    max-width: 480px;
     padding: 0 20px;
   }
 
   @media (min-width: 768px) {
-    min-width: 768px;
+    max-width: 768px;
+
     padding: 0 40px;
   }
 
-  @media (min-width: 1394px) {
-    min-width: 1394px;
-    padding: 0 40px;
+  @media (min-width: 1344px) {
+    max-width: 1344px;
+    padding: 0 15px;
   }
 }
 
