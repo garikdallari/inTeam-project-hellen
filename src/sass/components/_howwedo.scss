@@ -2,6 +2,10 @@
   padding: 50px 0px;
 }
 
+.howwedo__container {
+  margin: 0px auto;
+}
+
 .howwedo__tittle {
   @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
   text-align: center;
@@ -10,6 +14,8 @@
 
 .howwedo-list__item {
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 30px 18px 26px 18px;
 
   &:not(:last-child) {
     margin-bottom: 20px;
