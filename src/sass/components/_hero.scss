@@ -2,14 +2,21 @@
   position: relative;
   padding-top: 109px;
   padding-bottom: 47px;
-
+  min-height: 618px;
   
   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-  background-image: url(../images/images-mobile/vector-1.png);
   background-repeat: no-repeat;
   background-size: cover;
   
-  // background-position-x: -64px;
+  background-image: url(../images/images-mobile/hero-mobile-bg.png);
+
+   @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
+  }
+  
+  background-position-x: -64px;
 
   @include for-tablet-up {
     background-position-x: 0;}
