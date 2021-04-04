@@ -15,4 +15,20 @@
 
 .footer-list__link {
   @include font-silo(600, 14px, 1.21, 0.08em, $primary-title-color);
+  display: flex;
+  align-items: center;
+}
+
+.footer-list__icon {
+  margin-right: 10px;
+}
+
+.subfooter {
+  background-color: $bg-black-color;
+  padding: 21px 0px;
+}
+
+.subfooter__text {
+  @include font-silo(500, 14px, 2, 0.08em, $primary-text-color);
+  text-align: center;
 }
