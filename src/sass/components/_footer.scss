@@ -1,5 +1,5 @@
 .container--center {
-  max-width: 768px;
+  margin: 0 auto;
 }
 
 .footer-list {
@@ -10,6 +10,7 @@
 
   @include for-tablet-up {
     flex-direction: initial;
+    justify-content: space-between;
   }
 }
 
@@ -24,7 +25,6 @@
 .footer-list__item:last-child {
   @include for-tablet-up {
     display: flex;
-    margin-left: auto;
   }
 }
 
