@@ -5,7 +5,7 @@
 
 .container--program {
   padding-top: 50px;
-  padding-bottom: 33px;
+  padding-bottom: 163px;
 
   @include for-phone-only {
     background: {
@@ -24,7 +24,7 @@
 
   @include for-tablet-up {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 
     background: {
       image: url(../../images/images-tablet/program-tablet.png);
