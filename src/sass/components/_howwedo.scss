@@ -12,6 +12,12 @@
   margin-bottom: 30px;
 }
 
+.howwedo-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .howwedo-list__item {
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -20,6 +26,11 @@
   &:not(:last-child) {
     margin-bottom: 20px;
   }
+}
+
+.howwedo-list__icon {
+  fill: $accent-color;
+  margin-bottom: 20px;
 }
 
 .howwedo-list__tittle {
@@ -37,9 +48,4 @@
 
 .howwedo-list__text {
   @include font-silo(500, 12px, 1.66, 0.08em, $primary-text-color);
-}
-
-.howwedo-list__icon {
-  fill: $accent-color;
-  margin-bottom: 20px;
 }
