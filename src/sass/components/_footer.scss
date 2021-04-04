@@ -5,10 +5,10 @@
   padding: 30px 0px;
 }
 
-.footer-list__item:first-child {
+.footer-list__item:nth-child(1) {
   margin-bottom: 20px;
 }
 
-.footer-list__item:last-child {
+.footer-list__item:nth-child(2) {
   margin-bottom: 29px;
 }
