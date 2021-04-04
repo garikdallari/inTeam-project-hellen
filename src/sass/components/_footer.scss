@@ -15,10 +15,33 @@
 
 .footer-list__item:first-child {
   margin-bottom: 20px;
+
+  @include for-tablet-up {
+    margin-bottom: 0px;
+  }
+}
+
+.footer-list__item:last-child {
+  @include for-tablet-up {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.footer-list__link--after::after {
+  content: '';
+  width: 0px;
+  height: 40px;
+  border: 1px solid $primary-text-color;
+  margin: 0px 25px;
 }
 
 .footer-list__link:not(:last-of-type) {
   margin-bottom: 29px;
+
+  @include for-tablet-up {
+    margin-bottom: 0px;
+  }
 }
 
 .footer-list__link {
@@ -26,6 +49,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include for-tablet-up {
+    @include font-silo(600, 20px, 1.2, 0.08em, $primary-title-color);
+  }
+}
+
+.footer-list__logo {
+  @include for-tablet-up {
+    width: 128px;
+    height: 45px;
+  }
 }
 
 .footer-list__icon {
