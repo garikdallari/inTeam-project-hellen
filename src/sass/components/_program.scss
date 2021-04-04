@@ -5,12 +5,12 @@
 
 .container--program {
   padding-top: 50px;
-  padding-bottom: 33px;
+  padding-bottom: 133px;
   margin: 0 auto;
 
   @include for-phone-only {
     background: {
-      image: url(../../images/images-mobile/program-mobile.png);
+      image: url(../images/images-mobile/program-mobile.png);
       repeat: no-repeat;
       size: 120px 137px;
       position: bottom 33px right 0;
@@ -19,34 +19,34 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-mobile/program-mobile@2x.png);
+      background-image: url(../images/images-mobile/program-mobile@2x.png);
     }
   }
 
   @include for-tablet-up {
     padding-top: 60px;
-    padding-bottom: 50px;
+    padding-bottom: 250px;
 
     background: {
-      image: url(../../images/images-tablet/program-tablet.png);
-      position: bottom 111px left 384px;
+      image: url(../images/images-tablet/program-tablet.png);
+      position: bottom 111px right 0;
       repeat: no-repeat;
-      size: 474px 301px;
+      size: 384px 280px;
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-tablet/program-tablet@2x.png);
+      background-image: url(../images/images-tablet/program-tablet@2x.png);
     }
   }
 
   @include for-desktop-up {
-    min-width: 1394px;
-    padding: 120px 40px 60px;
+    min-width: 1344px;
+    padding: 120px 40px 234px;
 
     background: {
-      image: url(../../images/images-desktop/program-desktop.png);
+      image: url(../images/images-desktop/program-desktop.png);
       position: bottom 60px left 0;
       repeat: no-repeat;
       size: 540px 402px;
@@ -55,7 +55,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-desktop/program-desktop@2x.png);
+      background-image: url(../images/images-desktop/program-desktop@2x.png);
     }
   }
 
@@ -63,7 +63,7 @@
     min-width: 1680px;
     padding-left: 183px;
     padding-right: 183px;
-    padding-bottom: 176px;
+    padding-bottom: 363px;
     background: {
       repeat: no-repeat;
       size: 674px 502px;
@@ -117,8 +117,8 @@
 
 .program__interval {
   &::before {
-    content: counter(my-counter) ' '; /* Добавляем к числам пробел */
-    counter-increment: my-counter; /* Задаём имя счетчика */
+    content: counter(my-counter) ' ';
+    counter-increment: my-counter; 
   }
 
   & + & {

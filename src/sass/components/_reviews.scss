@@ -1,0 +1,107 @@
+.reviews{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews-heading {
+font-family: 'Montserrat', sans-serif;
+color: $primary-title-color;
+font-style: normal;
+font-weight: 800;
+font-size: 20px;
+line-height: 130%;
+text-align: center;
+letter-spacing: 0.08em;
+
+margin: 0 auto;
+margin-bottom: 20px;
+}
+
+.reviews-card {
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 20px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.reviews-slider {
+  justify-content: center;
+}
+
+.reviews-card__img {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.reviews-slider__item {
+  margin-right: 10px;
+}
+
+.reviews-slider__item--hidden {
+  @media screen and (max-width:767px) {
+    display: none;
+  }
+}
+
+.reviews-card__svg {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.reviews-card__title {
+  font-family: Montserrat;
+  color: $accent-color;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  margin-bottom: 10px;
+}
+
+.reviews-card__text {
+  font-family: Montserrat;
+  color: $primary-text-color;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: 0.08em;
+
+margin-bottom: 10px;
+}
+
+.reviews-card__mainText {
+  font-family: Montserrat;
+  color: $additional-text-color;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+text-align: center;
+}
+
+.reviews-card__link {
+  font-family: Montserrat;
+  color: #FF6B09;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 20px;
+text-decoration-line: underline;
+display: block;
+text-align: center;
+}
+
+.reviews-slider {
+  display: flex;
+}
