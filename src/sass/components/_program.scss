@@ -92,7 +92,9 @@
 .program__schedule {
   position: relative;
   padding-left: 25px;
-  margin-left: 74px;
+  // margin-left: 74px;
+
+  // text-align: center;
 
   list-style-type: none;
   counter-reset: my-counter;
