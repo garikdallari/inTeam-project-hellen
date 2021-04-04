@@ -1,4 +1,57 @@
-.hero { position: relative;
-padding-top: 109px;
+.hero-container { 
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 47px;
 
+  
+  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  background-image: url(../images/images-mobile/vector-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  // background-position-x: -64px;
+
+  @include for-tablet-up {
+    background-position-x: 0;}
+}
+
+.hero__title {
+margin-bottom: 30px;
+
+@include font-silo (800, 20px, 1.36, 0.03em, $primary-title-color);
+}
+
+.hero__text {
+  margin-bottom: 30px;
+  
+  
+  @include font-silo (700, 14px, 1.57, 0.08em, $primary-title-color);
+
+  &--grey {
+    font-weight: 500;
+    color: $primary-text-color;
+  }
+
+  &--orange {
+    font-weight: 500;
+    color: $accent-color;
+  }
+ 
+}
+
+.hero__btn {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+
+.hero-thumb { 
+  height: 178px;
+}
+
+.hero__img {
+height: 100%;
+width: 100%;
+object-fit: contain;
 }
