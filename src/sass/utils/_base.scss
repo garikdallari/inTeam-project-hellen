@@ -14,6 +14,8 @@
   @media (min-width: 1344px) {
     max-width: 1344px;
     padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -71,6 +73,7 @@ body {
   padding: 0;
 }
 
-button, label {
+button,
+label {
   cursor: pointer;
 }
