@@ -11,6 +11,11 @@
     url(/images/images-mobile/footer-mobile.png);
   background-size: cover;
 
+  @media screen and(max-width:767px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   @media screen and (min-device-pixel-ratio: 2),
     screen and (-webkit-min-device-pixel-ratio: 2),
     screen and (-o-min-device-pixel-ratio: 2/1),
@@ -65,13 +70,18 @@
 
 .box-centered {
   min-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and(min-width: 768px) {
     width: 688px;
   }
+
+  @media screen and(min-width: 1344px) {
+    width: 1090px;
+}
 }
 .contacts-title {
-// @include font-Montserrat (800, 14px, 136%, 0.03em, $secondary-title-color);
 font-family: 'Montserrat', sans-serif;
 color: $secondary-title-color;
 font-style: normal;
@@ -121,7 +131,8 @@ color: $accent-color;
   
   @media screen and (min-width: 1344px) { 
     font-size: 30px;
-    line-height: 56px;
+    line-height: 37px;
+    margin-bottom: 56px;
     }
   }
   
@@ -166,6 +177,7 @@ color: $accent-color;
 
   .contacts-form__input:valid {
     color: $secondary-title-color;
+    background-color: transparent;
   }
 
   .contacts-form__input:invalid {
