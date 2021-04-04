@@ -17,6 +17,10 @@
     max-width: 480px;
   }
 
+  @include for-tablet-up {
+    padding-bottom: 50px;
+  }
+
   @include for-desktop-up {
     position: relative;
     height: 329px;
