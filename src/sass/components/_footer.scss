@@ -12,3 +12,7 @@
 .footer-list__item:nth-child(2) {
   margin-bottom: 29px;
 }
+
+.footer-list__link {
+  @include font-silo(600, 14px, 1.21, 0.08em, $primary-title-color);
+}
