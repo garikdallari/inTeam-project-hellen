@@ -18,6 +18,8 @@
   justify-content: center;
 
   @include for-tablet-up {
+    margin-top: -27px;
+    margin-left: -20px;
   }
 }
 
@@ -35,7 +37,14 @@
 
   @include for-tablet-up {
     max-width: 334px;
+    margin-top: 27px;
+    margin-left: 20px;
+    flex-basis: calc((100% / 2 - 30px));
   }
+
+  @include for-desktop-up;
+  max-width: 425px;
+  flex-basis: calc((100% / 3 - 30px));
 }
 
 .howwedo-list__icon {
