@@ -36,6 +36,11 @@
   border: none;
   background-color: transparent;
   fill: $secondary-title-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .mobile-nav {
