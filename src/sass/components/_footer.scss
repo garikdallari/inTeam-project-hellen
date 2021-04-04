@@ -23,12 +23,12 @@
   margin-right: 10px;
 }
 
-.subfooter {
+.sub-footer {
   background-color: $bg-black-color;
   padding: 21px 0px;
 }
 
-.subfooter__text {
+.sub-footer__text {
   @include font-silo(500, 14px, 2, 0.08em, $primary-text-color);
   text-align: center;
 }
