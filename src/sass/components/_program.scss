@@ -10,7 +10,7 @@
 
   @include for-phone-only {
     background: {
-      image: url(../../images/images-mobile/program-mobile.png);
+      image: url(../images/images-mobile/program-mobile.png);
       repeat: no-repeat;
       size: 120px 137px;
       position: bottom 33px right 0;
@@ -19,7 +19,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-mobile/program-mobile@2x.png);
+      background-image: url(../images/images-mobile/program-mobile@2x.png);
     }
   }
 
@@ -28,7 +28,7 @@
     padding-bottom: 250px;
 
     background: {
-      image: url(../../images/images-tablet/program-tablet.png);
+      image: url(../images/images-tablet/program-tablet.png);
       position: bottom 111px right 0;
       repeat: no-repeat;
       size: 384px 280px;
@@ -37,7 +37,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-tablet/program-tablet@2x.png);
+      background-image: url(../images/images-tablet/program-tablet@2x.png);
     }
   }
 
@@ -46,7 +46,7 @@
     padding: 120px 40px 60px;
 
     background: {
-      image: url(../../images/images-desktop/program-desktop.png);
+      image: url(../images/images-desktop/program-desktop.png);
       position: bottom 60px left 0;
       repeat: no-repeat;
       size: 540px 402px;
@@ -55,7 +55,7 @@
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../../images/images-desktop/program-desktop@2x.png);
+      background-image: url(../images/images-desktop/program-desktop@2x.png);
     }
   }
 
