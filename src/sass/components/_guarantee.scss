@@ -21,8 +21,8 @@
 
 span {
   color: $accent-color;
-  height: 5px;
 }
+
 .guarantee__title {
   font-family: Montserrat;
   font-size: 26px;
@@ -72,41 +72,33 @@ span {
 }
 
 .guarantee-list__item::before {
-  @include for-phone-only {
-    content: '';
-    position: absolute;
-    display: block;
-    top: 0;
-    left: -8px;
-    width: 15px;
-    height: 20px;
-    background-image: url(../../images/images-desktop/about-desktop.jpg);
-    background-size: contain;
-  }
-  @include for-tablet-up {
-    content: '';
-    position: absolute;
-    display: block;
-    left: -8px;
-    width: 15px;
-    height: 20px;
-    background-image: url(../../images/images-desktop/about-desktop.jpg);
-  }
-}
-
-@include for-desktop-up() {
   position: absolute;
   display: block;
   content: '';
-  top: 0;
-  left: -20px;
-  width: 22px;
-  height: 30px;
-  margin-right: 30px;
-  margin-left: -11px;
-  background-image: url(../../images/images-desktop/about-desktop.jpg);
   background-size: contain;
+  @include for-phone-only {
+    left: -8px;
+    width: 15px;
+    height: 20px;
+    background-image: url(../../images/inline-svg/guarantee-mob.svg);
+  }
+  @include for-tablet-up {
+    left: -8px;
+    width: 15px;
+    height: 20px;
+    background-image: url(../../images/inline-svg/guarantee-mob.svg);
+  }
+
+  @include for-desktop-up {
+    left: -20px;
+    width: 22px;
+    height: 30px;
+    margin-right: 30px;
+    margin-left: -11px;
+    background-image: url(../../images/inline-svg/guarantee-mob.svg);
+  }
 }
+
 .guarantee-list__item p {
   font-style: normal;
   font-weight: 500;
@@ -129,10 +121,7 @@ span {
     margin-top: 50px;
     margin-bottom: 30px;
     font-size: 26px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 34px;
 
-    text-align: center;
+    line-height: 34px;
   }
 }

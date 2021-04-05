@@ -32,29 +32,26 @@
   }
 
   .about-list__item {
+    font-style: normal;
     @include for-phone-only {
+      letter-spacing: 0em;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 20px;
+      text-align: left;
+      padding-bottom: 15px;
+    }
+    @include for-tablet-up {
       font-size: 14px;
-      font-style: normal;
       font-weight: 600;
       line-height: 17px;
       letter-spacing: 0.06em;
       text-align: left;
     }
 
-    @include for-phone-only {
-      font-family: Montserrat;
-      font-size: 12px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: 20px;
-      letter-spacing: 0em;
-      text-align: left;
-      padding-bottom: 15px;
-    }
     @include for-desktop-up {
-      font-family: Montserrat;
       font-size: 16px;
-      font-style: normal;
+
       font-weight: 600;
       line-height: 20px;
       letter-spacing: 0.06em;
@@ -111,7 +108,6 @@
     margin-top: 0px;
     margin-right: auto;
     @include for-phone-only {
-      margin-right: auto;
       font-size: 20px;
       line-height: 26px;
       padding-bottom: 20px;
@@ -175,7 +171,7 @@
         content: '';
         width: 17px;
         height: 14px;
-        background-image: url(/images/inline-svg/about-mob.svg);
+        background-image: url(../../images/inline-svg/about-mob.svg);
       }
       & p {
         padding-left: 10px;
@@ -192,7 +188,7 @@
         content: '';
         width: 17px;
         height: 14px;
-        background-image: url(/images/inline-svg/about-mob.svg);
+        background-image: url(../../images/inline-svg/about-mob.svg);
         background-size: contain;
       }
     }
@@ -208,7 +204,7 @@
         content: '';
         width: 24px;
         height: 20px;
-        background-image: url(/images/inline-svg/about-mob.svg);
+        background-image: url(../../images/inline-svg/about-mob.svg);
         background-size: contain;
       }
     }
@@ -229,7 +225,7 @@
     content: '';
     width: 20px;
     height: 2px;
-    background-image: url(/images/inline-svg/—about.svg);
+    background-image: url(../../images/inline-svg/—about.svg);
     background-size: contain;
   }
   .about-list__item:nth-last-child(2) {
