@@ -3,6 +3,10 @@
   padding-bottom: 50px;
 }
 
+.container__reviews {
+    margin: 0 auto;
+  }
+
 .reviews-heading {
 font-family: 'Montserrat', sans-serif;
 color: $primary-title-color;
@@ -15,15 +19,57 @@ letter-spacing: 0.08em;
 
 margin: 0 auto;
 margin-bottom: 20px;
+
+@media screen and (min-width:768px) {
+font-size: 26px;
+}
+
+@media screen and (min-width:1344px) {
+  font-size: 46px;
+  }
 }
 
 .reviews-card {
+  min-width: 280px;
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 30px;
   margin-bottom: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+
+  @media screen and (min-width:768px) {
+    min-width: 688px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width:1344px) {
+    min-width: 1090px;
+    padding-top: 50px;
+    padding-left: 82px;
+    padding-right: 112px;
+    padding-bottom: 51px;
+  }
+}
+
+.reviews-card__container {
+  @media screen and(min-width:768px) {
+    display: flex;
+    }
+
+@media screen and(min-width:1344px) {
+  margin-left: 40px;
+}
+}
+
+.reviews-card__bx {
+  @media screen and(min-width:768px) {
+  min-width: 412px;
+  margin-left: 40px;
+}
 }
 
 .reviews-slider {
@@ -35,6 +81,11 @@ margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+
+  @media screen and (min-width:767px) {
+    margin-bottom: 26px;
+    min-width: 150px;
+  }
 }
 
 .reviews-slider__item {
@@ -65,10 +116,21 @@ margin-bottom: 20px;
   letter-spacing: 0.08em;
 
   margin-bottom: 10px;
+
+  @media screen and (min-width:767px) {
+    text-align: start;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media screen and (min-width:1344px) {
+    font-size: 30px;
+    line-height: 37px;
+}
 }
 
 .reviews-card__text {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: $primary-text-color;
 font-style: normal;
 font-weight: 500;
@@ -78,20 +140,37 @@ text-align: center;
 letter-spacing: 0.08em;
 
 margin-bottom: 10px;
+
+@media screen and (min-width:767px) {
+  text-align: start;
+}
+
+@media screen and (min-width:1344px) {
+font-size: 14px;
+line-height: 17px;
+}
 }
 
 .reviews-card__mainText {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: $additional-text-color;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
 line-height: 20px;
 text-align: center;
+
+@media screen and (min-width:767px) {
+  text-align: start;
 }
 
+@media screen and (min-width:1344px) {
+font-size: 18px;
+line-height: 28px;
+}
+}
 .reviews-card__link {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;
   color: #FF6B09;
 font-style: normal;
 font-weight: 500;
@@ -100,6 +179,15 @@ line-height: 20px;
 text-decoration-line: underline;
 display: block;
 text-align: center;
+
+@media screen and (min-width:768px) {
+  display: inline-block;
+}
+
+@media screen and (min-width:1344px) {
+font-size: 18px;
+line-height: 28px;
+}
 }
 
 .reviews-slider {
