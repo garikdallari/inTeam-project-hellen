@@ -2,9 +2,13 @@
   display: flex;
   position: absolute;
   z-index: 10;
-  transform: translateY(30px);
+  transform: translateY(35px);
   width: 100%;
-  align-items: center;  
+  align-items: center;
+  
+  @include for-tablet-up {
+    transform: translateY(42px);
+  }
 }
 
 .header-nav {

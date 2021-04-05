@@ -6,12 +6,17 @@
   top: 0;
   left: 0;
   z-index: 100;
-  padding: 30px 20px;
+  padding: 35px 20px;
   
   width: 100vw;
   height: 100vh;
   background: rgba(17, 21, 24, 0.9);
   transform: translateX(100%);
+  
+  @include for-tablet-up {
+    padding: 42px 40px;
+  }
+
 
   @include for-desktop-up {
     display: none;
@@ -26,6 +31,7 @@
 .mobile-head {
   display: flex;
   margin-bottom: 50px;
+  align-items: center;
 }
 
 .mobile__logo {
