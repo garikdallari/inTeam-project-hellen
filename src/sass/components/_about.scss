@@ -13,271 +13,302 @@
     display: block;
   }
   @include for-desktop-up {
-    width: 1480px;
-    padding: 0px 183px;
+    @media (min-width: 1344px) {
+      width: 1344px;
+      padding: 0 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
-}
 
-.container p {
-  margin: 0;
-  text-align: left;
-  font-family: Montserrat;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0em;
-}
-
-.about-list__item {
-  @include for-phone-only {
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0.06em;
+  .container p {
+    margin: 0;
     text-align: left;
-  }
-}
-.about__cv p:not(:last-child) {
-  color: $primary-text-color;
-  margin-bottom: 20px;
-
-  @include for-phone-only {
     font-family: Montserrat;
     font-size: 12px;
-    font-style: normal;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
   }
-}
 
-.about {
-  width: 1205px;
-  margin: auto;
-  color: $primary-title-color;
-  display: flex;
+  .about-list__item {
+    @include for-phone-only {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0.06em;
+      text-align: left;
+    }
 
-  @include for-phone-only {
-    width: 100%;
+    @include for-phone-only {
+      font-family: Montserrat;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 20px;
+      letter-spacing: 0em;
+      text-align: left;
+      padding-bottom: 15px;
+    }
+    @include for-desktop-up {
+      font-family: Montserrat;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 20px;
+      letter-spacing: 0.06em;
+      text-align: left;
+      width: 450px;
+
+      padding-bottom: 50px;
+    }
+  }
+
+  .about {
     margin: auto;
-    display: block;
+    @include for-phone-only {
+      width: 100%;
+      margin: auto;
+      display: block;
+    }
+    @include for-tablet-up {
+      width: 688px;
+      margin-bottom: 50px;
+      display: flex;
+    }
+    @include for-desktop-up {
+      width: 1205px;
+      margin-right: auto;
+      color: $primary-title-color;
+      display: flex;
+    }
   }
-  @include for-tablet-up {
-    width: 688px;
-    margin-bottom: 50px;
-  }
-}
-.about__photo {
-  width: 530px;
-  @include for-phone-only {
-    width: 243px;
-  }
-  @include for-tablet-up {
+  .about__photo {
     width: 243px;
     height: 305px;
-  }
-}
-.about__info {
-  align-items: flex-start;
-  display: flex;
-  @include for-phone-only {
-    display: block;
-  }
-  @include for-tablet-up {
-    width: 100%;
-  }
-}
-.about__title {
-  font-style: normal;
-  font-weight: 800;
-  letter-spacing: 0.03em;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  @include for-phone-only {
-    margin-right: auto;
-    font-size: 20px;
-    line-height: 26px;
-    padding-bottom: 20px;
-  }
-  @include for-tablet-up {
-    margin-left: 40px;
-    font-size: 26px;
-    line-height: 34px;
-    padding-bottom: 30px;
-  }
-  @include for-desktop-up {
-    font-size: 46px;
-    line-height: 60px;
-    padding-bottom: 50px;
-  }
-}
-.about-list {
-  @include for-phone-only {
-    padding-left: 20px;
-    width: 75%;
-  }
-}
-
-.about__subtitle {
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 24px;
-  letter-spacing: 0.08em;
-  text-align: left;
-  display: block;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  margin: 0;
-  border-bottom: 1px solid $primary-text-color;
-  width: 280px;
-  @include for-phone-only {
-    text-align: left;
-  }
-  @include for-tablet-up {
-    padding-top: 0px;
-    font-size: 20px;
-    line-height: 25px;
-  }
-
-  @include for-desktop-up {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.about-list__item {
-  position: relative;
-  padding-bottom: 20px;
-  list-style-type: none;
-
-  @include for-tablet-up {
-    padding-bottom: 34px;
-
-    &::before {
-      position: absolute;
-      left: -40px;
-      content: '';
-      width: 17px;
-      height: 14px;
-      background-image: url(/inline-svg/about-mob.svg);
-      background-size: contain;
+    @include for-desktop-up {
+      width: 530px;
+      height: 667px;
     }
   }
-
-  @include for-desktop-up {
-    padding-bottom: 30px;
-
-    &::before {
-      position: absolute;
-      left: -30px;
-      content: '';
-      width: 24px;
-      height: 20px;
-      background-image: url(/inline-svg/about-mob.svg);
-      background-size: contain;
+  .about__info {
+    align-items: flex-start;
+    display: flex;
+    @include for-phone-only {
+      display: block;
+    }
+    @include for-tablet-up {
+      width: 100%;
+      padding-left: 40px;
     }
   }
-  @include for-phone-only {
-    width: 100%;
-    &::before {
-      position: absolute;
-      top: 0;
-      left: -20px;
-      content: '';
-      width: 17px;
-      height: 14px;
-      background-image: url(/inline-svg/about-mob.svg);
-    }
-    & p {
-      padding-left: 10px;
-    }
-  }
-}
-.about-list__item:last-child {
-  @include for-tablet-up {
-    padding-bottom: 20px;
-  }
-  @include for-phone-only {
-    padding-bottom: 0px;
-  }
-}
-.about-list__item:last-child::before {
-  display: block;
-  content: '';
-  width: 20px;
-  height: 2px;
-  background-image: url(/inline-svg/—about.svg);
-  background-size: contain;
-}
-.about-list__item:nth-last-child(2) {
-  @include for-tablet-up {
-    padding-bottom: 20px;
-  }
-}
-.about-list {
-  & p {
-    font-size: 14px;
+  .about__title {
     font-style: normal;
-    font-weight: 600;
-    line-height: 17px;
-    letter-spacing: 0.06em;
-    text-align: left;
-  }
-
-  @include for-desktop-up {
-    & p {
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    padding: 30px 0;
-  }
-  @include for-tablet-up {
-    margin-top: 20px;
+    font-weight: 800;
+    letter-spacing: 0.03em;
     margin-bottom: 0px;
-    & p {
-      margin-left: -15px;
+    margin-top: 0px;
+    margin-right: auto;
+    @include for-phone-only {
+      margin-right: auto;
+      font-size: 20px;
+      line-height: 26px;
+      padding-bottom: 20px;
+    }
+    @include for-tablet-up {
+      font-size: 26px;
+      line-height: 34px;
+      padding-bottom: 30px;
+    }
+    @include for-desktop-up {
+      font-size: 46px;
+      line-height: 60px;
+      padding-bottom: 50px;
     }
   }
-}
-.about__cv {
-  font-family: Montserrat;
-  color: $primary-text-color;
-  font-style: normal;
-  font-weight: 500;
-  text-align: left;
+  .about-list {
+    @include for-phone-only {
+      padding-left: 20px;
+      width: 75%;
+    }
+  }
 
-  @include for-phone-only {
+  .about__subtitle {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    text-align: left;
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 1px solid $primary-text-color;
+    width: 100%;
+    @include for-phone-only {
+      text-align: left;
+    }
+    @include for-tablet-up {
+      padding-top: 0px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    @include for-desktop-up {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  .about-list__item {
+    position: relative;
+    list-style-type: none;
+
+    @include for-phone-only {
+      width: 100%;
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        content: '';
+        width: 17px;
+        height: 14px;
+        background-image: url(/images/inline-svg/about-mob.svg);
+      }
+      & p {
+        padding-left: 10px;
+      }
+    }
+    @include for-tablet-up {
+      padding-bottom: 34px;
+      & p {
+        margin-left: -15px;
+      }
+      &::before {
+        position: absolute;
+        left: -40px;
+        content: '';
+        width: 17px;
+        height: 14px;
+        background-image: url(/images/inline-svg/about-mob.svg);
+        background-size: contain;
+      }
+    }
+    @include for-desktop-up {
+      padding-bottom: 50px;
+      & p {
+        margin-left: 20px;
+      }
+
+      &::before {
+        position: absolute;
+        left: -40px;
+        content: '';
+        width: 24px;
+        height: 20px;
+        background-image: url(/images/inline-svg/about-mob.svg);
+        background-size: contain;
+      }
+    }
+  }
+  .about-list__item:last-child {
+    @include for-phone-only {
+      padding-bottom: 0px;
+    }
+    @include for-tablet-up {
+      padding-bottom: 20px;
+    }
+    @include for-desktop-up {
+      padding-bottom: 50px;
+    }
+  }
+  .about-list__item:last-child::before {
+    display: block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-image: url(/images/inline-svg/—about.svg);
+    background-size: contain;
+  }
+  .about-list__item:nth-last-child(2) {
+    @include for-tablet-up {
+      padding-bottom: 20px;
+    }
+
+    @include for-desktop-up {
+      padding-bottom: 30px;
+    }
+  }
+  .about-list {
+    & p {
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 17px;
+      letter-spacing: 0.06em;
+      text-align: left;
+      margin: 0;
+    }
+
+    @include for-tablet-up {
+      margin-top: 20px;
+      margin-bottom: 0px;
+      & p {
+        padding-left: -25px;
+      }
+    }
+
+    @include for-desktop-up {
+      & p {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+  .about__cv {
+    font-family: Montserrat;
+    color: $primary-text-color;
+    font-style: normal;
+    font-weight: 500;
+    text-align: left;
     font-size: 12px;
     line-height: 20px;
     margin-top: 0px;
+    & p {
+      margin: 0px;
+      margin-bottom: 10px;
+    }
+    @include for-desktop-up {
+      margin: -15px 0;
+      font-size: 18px;
+      line-height: 28px;
+      width: 81%;
+      & p {
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+    }
+    @include for-phone-only {
+      width: 68%;
+    }
   }
 
-  @include for-desktop-up {
-    margin: -15px 0;
-    font-size: 18px;
-    line-height: 28px;
+  .about__link {
+    text-decoration: underline;
+    color: $accent-color;
   }
-}
-.about span {
-  color: $accent-color;
-}
 
-.about__link {
-  text-decoration: underline;
-  color: $accent-color;
-}
-
-.about__text {
-  max-width: 642px;
-  @include for-phone-only {
-    margin-left: 0px;
-  }
-  @include for-tablet-up {
-    width: 340px;
-    padding-left: 40px;
+  .about__text {
+    @include for-phone-only {
+      margin-left: 0px;
+    }
+    @include for-tablet-up {
+      width: 340px;
+    }
+    @include for-desktop-up {
+      width: 642px;
+    }
   }
 }
