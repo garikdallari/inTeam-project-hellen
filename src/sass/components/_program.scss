@@ -103,8 +103,7 @@
 
   @include for-tablet-up {
     padding-left: 56px;
-    margin-left: 63px;
-    width: 100%;
+    margin-left: 63px;  
   }
 
   @include for-desktop-up {
@@ -208,6 +207,24 @@
   }
 }
 
+.partition-list--left {
+  @include for-tablet-up {
+    width: 176px;
+  }
+}
+
+.partition-list--center {
+  @include for-tablet-up {
+    width: 155px;
+  }
+}
+
+.partition-list--right {
+  @include for-tablet-up {
+    width: 110px;
+  }
+}
+
 .partition-list__item {
   @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
   text-transform: none;
@@ -245,12 +262,6 @@
 
 .program-list__item {
   @include font-silo(500, 12px, 1.667, 0.08em, $program-text-color);
-
-  @include for-tablet-up {
-    &:first-child {
-      width: 176px;
-    }
-  }
 
   @include for-desktop-up {
     @include font-silo(null, 18px, 1.56, null, null);
