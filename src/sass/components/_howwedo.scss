@@ -54,14 +54,14 @@
     max-width: 334px;
     margin-top: 27px;
     margin-left: 20px;
-    flex-basis: calc((100% / 2 - 30px));
+    flex-basis: calc((100% / 2 - 27px));
   }
 
   @include for-desktop-up {
     max-width: 425px;
     margin-top: 20px;
     margin-left: 20px;
-    flex-basis: calc((100% / 3 - 30px));
+    flex-basis: calc((100% / 3 - 20px));
   }
 }
 
