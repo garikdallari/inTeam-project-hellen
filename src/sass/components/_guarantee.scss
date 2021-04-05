@@ -12,6 +12,14 @@
   margin-bottom: 30px;
 }
 
+.guarantee-list__item::before {
+  content: '';
+  display: flex;
+  width: 14.67px;
+  height: 20px;
+  background-image: url();
+}
+
 .guarantee-list__item-text {
   @include font-silo(500, 12px, 1.66, 0.03em, $additional-text-color);
 }
