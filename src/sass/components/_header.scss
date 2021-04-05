@@ -4,7 +4,7 @@
   z-index: 10;
   transform: translateY(30px);
   width: 100%;
-  
+  align-items: center;  
 }
 
 .header-nav {
@@ -15,10 +15,32 @@
   display: none;
 
   @include for-tablet-up {
-  display: inline-block;
-  margin-left: auto;
+    @include centeredFlex;
+    margin-left: auto;
+    background-color: transparent;
+    border-color: $accent-color;
+    color: $accent-color;
+    text-align: center;
   }
 }
+
+.header__logo {
+  &--black {
+    @include for-tablet-up {
+      display: none;
+    }
+  }
+
+  &--orange {
+    display: none;
+
+    @include for-tablet-up {
+      display: flex;
+    }
+  }
+}
+
+
 
 .mobile-menu__btn--open {
   display: flex;
@@ -32,5 +54,10 @@
   &:focus {
     fill: $accent-color;
   }
+
+  @include for-tablet-up {
+    margin-left: 40px;
+  }
+
 }
 

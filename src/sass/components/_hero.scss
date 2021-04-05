@@ -20,6 +20,11 @@
 
   // @include for-tablet-up {
   //   background-position-x: 0;}
+
+  @include for-tablet-up {
+    padding-top: 158px;
+  }
+
 }
 
 .hero__title {
