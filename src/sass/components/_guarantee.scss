@@ -2,8 +2,9 @@
   padding-top: 50px;
 }
 
-.container--center {
+.container--wrapper {
   margin: 0px auto;
+  background-color: $garant-bg-color;
 }
 
 .guarantee__title {
@@ -12,12 +13,19 @@
   margin-bottom: 30px;
 }
 
+.guarantee-list__item {
+  display: flex;
+  align-items: center;
+}
+
 .guarantee-list__item::before {
   content: '';
   display: flex;
   width: 14.67px;
   height: 20px;
-  background-image: url();
+  background-image: url(../../src/images/fire.svg);
+  margin-right: 20.33px;
+  background-size: cover;
 }
 
 .guarantee-list__item-text {
