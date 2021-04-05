@@ -80,7 +80,7 @@ span {
     left: -8px;
     width: 15px;
     height: 20px;
-    background-image: url(/images/inline-svg/guarantee-mob.svg);
+    background-image: url(../../images/images-desktop/about-desktop.jpg);
     background-size: contain;
   }
   @include for-tablet-up {
@@ -90,11 +90,11 @@ span {
     left: -8px;
     width: 15px;
     height: 20px;
-    background-image: url(/images/inline-svg/guarantee-mob.svg);
+    background-image: url(../../images/images-desktop/about-desktop.jpg);
   }
 }
 
-@include for-desktop-up {
+@include for-desktop-up() {
   position: absolute;
   display: block;
   content: '';
@@ -104,7 +104,7 @@ span {
   height: 30px;
   margin-right: 30px;
   margin-left: -11px;
-  background-image: url(/images/inline-svg/guarantee-mob.svg);
+  background-image: url(../../images/images-desktop/about-desktop.jpg);
   background-size: contain;
 }
 .guarantee-list__item p {
