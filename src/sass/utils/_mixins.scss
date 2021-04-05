@@ -37,7 +37,7 @@
 
 // ===== Анимация =====
 // @include transition(transform);
-@mixin transition($type) {
+@mixin transition($type, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
   transition: $type $duration $timing-function;
 }
 
