@@ -5,6 +5,8 @@
 .container--wrapper {
   margin: 0px auto;
   background-color: $garant-bg-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .guarantee__title {
@@ -37,4 +39,8 @@
 
 .guarantee-list__item-text {
   @include font-silo(500, 12px, 1.66, 0.03em, $additional-text-color);
+}
+
+.guarantee-list__accent-text {
+  color: $accent-color;
 }
