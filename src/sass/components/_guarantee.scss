@@ -14,17 +14,24 @@
 }
 
 .guarantee-list__item {
-  display: flex;
-  align-items: center;
+  border-left: 1px dotted #b9b9b9;
+  position: relative;
+  padding-left: 28px;
+}
+
+.guarantee-list__item:not(:last-child) {
+  padding-bottom: 23px;
 }
 
 .guarantee-list__item::before {
   content: '';
   display: flex;
+  position: absolute;
+  top: -3px;
+  left: -9px;
   width: 14.67px;
   height: 20px;
   background-image: url(../../src/images/fire.svg);
-  margin-right: 20.33px;
   background-size: cover;
 }
 
