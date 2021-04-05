@@ -1,0 +1,167 @@
+.problems {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: $bg-black-color;
+    background-image: linear-gradient(to bottom, $bg-black-color 70%, $bg-white-color 30%);
+    
+    @include for-desktop-up {
+      background-image: linear-gradient(to bottom $bg-black-color 67%, $bg-white-color 33%);
+      background-image: url(../../images/fire-problems.png);
+      background-repeat: no-repeat;
+      background-size: 455px 472px;
+      background-position: top 88px right -48px;
+    }
+  }
+  
+  .problems__container {
+    @include  for-phone-only {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      max-width: 480px;
+    }
+  
+    @include for-tablet-up {
+      width: 768px;
+      padding-top: 60px;
+      padding-bottom: 50px;
+    }
+  
+    @include for-desktop-up {
+      position: relative;
+      height: 560px;
+      padding-top: 100px;
+      max-width: 1680px;
+      padding-left: 183px;
+      padding-right: 183px;
+    }
+  
+  }
+  
+  .problems__tittle {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.36;
+  letter-spacing: 0.03em;
+  color: $secondary-title-color;
+  
+  @include for-phone-only {
+    min-width: 320px;
+    padding-bottom: 50px;
+  }
+  
+  @include for-tablet-up {
+    min-width: 588px;
+    padding-bottom: 50px;
+    font-size: 26px;
+  }
+  
+  @include for-desktop-up {
+    min-width: 866px;
+    padding-bottom: 130px;
+    width: 866px;
+    font-size: 46px;
+  }
+  
+  }
+  
+  .problems__tittle-orange {
+    color: $accent-color;
+  }
+  
+  .problems-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 30px;
+    
+    box-shadow: -5px 8px 26px $shadow-color;
+  
+    list-style-type: none;
+    counter-reset: my-count;
+  
+    background-color: $secondary-title-color;
+  
+    @include for-tablet-up {
+      flex-direction: row;
+      padding-left: 96px;
+      padding-bottom: 26px;
+    }
+  
+    @include for-desktop-up {
+      position: absolute;
+      left: 15px;
+      top: 348px;
+      padding-left: 114px;
+      padding-bottom: 94px;
+      padding-top: 70px;
+      width: 1314px;
+    }
+  }
+  
+  .problems-list__item {
+    position: relative;
+    padding-left: 30px;
+  
+    &:not(:first-child) {
+    margin-top: 20px;
+  
+      @include for-tablet-up {
+        margin-top: 30px;
+      }
+  
+      @include for-desktop-up {
+        margin-top: 32px;
+      }
+    }
+  
+    @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
+  
+  
+    @include for-tablet-up {
+        width: 236px;
+        margin-top: 30px;
+        margin-left: 20px; 
+        }
+  
+    @include for-desktop-up {
+    margin-top: 32px;
+    margin-left: 40px; 
+    width: 356px;
+    }
+  }
+  
+  .problems-list__item {
+    padding-bottom: 20px;
+  }
+  
+  .problems-list__item::before {
+    color: $accent-color;
+    content: '0' counter(my-count) ' ';
+    counter-increment: my-count; 
+  }
+  
+  .problems-orange-line {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: inline-block;
+    width: 14px;
+    height: 1px;
+  
+    background-color: $accent-color;
+  
+    @include for-desktop-up {
+      top: 13px;
+    }
+  }
+  
+  .problems-list__text {
+    padding-top: 10px;
+    text-align: left;
+    transform: translateX(-20px);
+  }
