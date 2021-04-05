@@ -104,9 +104,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // width: 100%;
-  // padding-top: 20px;
-  // padding-left: 30px;//------------
   
   list-style-type: none;
   counter-reset: my-count;
@@ -116,49 +113,26 @@
   @include for-tablet-up {
     flex-direction: row;
     padding-top: 0;
-    margin: -15px -10px;//----------
-    // padding-left: 68px;//-----------------
-    // padding-bottom: 25px;//--------------
+    margin: -15px -10px;
   }
-
-  // @include for-desktop-up {
-  //   position: absolute;
-  //   top: -199px;
-  //   left: 0;
-
-  //   padding-left: 44px;
-  //   padding-bottom: 70px;
-  //   padding-top: 38px;
-  //   min-width: 100%;
-  // }
 }
 
 .benefits__item {
   position: relative;
   padding-left: 30px;
-
+  
+  @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
+  
   &:not(:first-child) {
-  // margin-top: 20px; //----------------
-
-    @include for-tablet-up {
-      // margin-top: 30px; //---------------
-    // margin: 15px 10px; //----------
-    }
-
     @include for-desktop-up {
       margin-top: 32px;
     }
   }
 
-  @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
 
 
   @include for-tablet-up {
-      // width: 236px;//---------------
-      // flex-basis: calc((100% - 50px) / 2);
-      margin: 15px 10px;
-      // margin-top: 30px;----------------------
-      // margin-left: 20px; ---------------------
+    margin: 15px 10px;
       }
 
   @include for-desktop-up {
