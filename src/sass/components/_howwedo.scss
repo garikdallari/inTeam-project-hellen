@@ -63,6 +63,10 @@
 
 .howwedo-list__tittle {
   @include font-silo(700, 14px, 1.42, 0.08em, $primary-title-color);
+
+  @include for-desktop-up {
+    @include font-silo(700, 20px, 1.4, 0.08em, $primary-title-color);
+  }
 }
 
 .howwedo-list__tittle::after {
@@ -76,4 +80,8 @@
 
 .howwedo-list__text {
   @include font-silo(500, 12px, 1.66, 0.08em, $primary-text-color);
+
+  @include for-desktop-up {
+    @include font-silo(500, 18px, 1.55, 0.08em, $primary-text-color);
+  }
 }
