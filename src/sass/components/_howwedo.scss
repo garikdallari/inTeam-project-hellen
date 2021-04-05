@@ -10,6 +10,15 @@
   @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
   text-align: center;
   margin-bottom: 30px;
+
+  @include for-tablet-up {
+    @include font-silo(800, 26px, 130%, 0.03em, $primary-title-color);
+  }
+
+  @include for-desktop-up {
+    @include font-silo(800, 46px, 130%, 0.03em, $primary-title-color);
+    text-align: start;
+  }
 }
 
 .howwedo-list {
