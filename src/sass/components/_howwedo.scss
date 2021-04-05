@@ -63,11 +63,21 @@
     margin-left: 20px;
     flex-basis: calc((100% / 3 - 20px));
   }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
 }
 
 .howwedo-list__icon {
   fill: $accent-color;
   margin-bottom: 20px;
+
+  .howwedo-list__item:hover &,
+  .howwedo-list__item:focus & {
+    fill: $secondary-title-color;
+  }
 }
 
 .howwedo-list__tittle {
@@ -75,6 +85,11 @@
 
   @include for-desktop-up {
     @include font-silo(700, 20px, 1.4, 0.08em, $primary-title-color);
+  }
+
+  .howwedo-list__item:hover &,
+  .howwedo-list__item:focus & {
+    color: $secondary-title-color;
   }
 }
 
@@ -85,6 +100,11 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
+
+  .howwedo-list__item:hover &,
+  .howwedo-list__item:focus & {
+    background-color: $secondary-title-color;
+  }
 }
 
 .howwedo-list__text {
@@ -92,5 +112,10 @@
 
   @include for-desktop-up {
     @include font-silo(500, 18px, 1.55, 0.08em, $primary-text-color);
+  }
+
+  .howwedo-list__item:hover &,
+  .howwedo-list__item:focus & {
+    color: $secondary-title-color;
   }
 }
