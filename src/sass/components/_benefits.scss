@@ -72,16 +72,26 @@
   }
 }
 
+.benefits-wrapper {
+  padding-top: 30px;
+  padding-bottom: 25px;
+  padding-left: 98px;
+  padding-right: 118px;
+
+  background-color: $bg-white-color;
+
+  box-shadow: -5px 8px 26px $shadow-color;
+
+}
+
 .benefits__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   padding-top: 20px;
-  padding-left: 30px;
+  // padding-left: 30px;//------------
   
-  box-shadow: -5px 8px 26px $shadow-color;
-
   list-style-type: none;
   counter-reset: my-count;
 
@@ -90,8 +100,9 @@
   @include for-tablet-up {
     flex-direction: row;
     padding-top: 0;
-    padding-left: 68px;
-    padding-bottom: 25px;
+    margin: -15px -10px;//----------
+    // padding-left: 68px;//-----------------
+    // padding-bottom: 25px;//--------------
   }
 
   @include for-desktop-up {
@@ -111,10 +122,11 @@
   padding-left: 30px;
 
   &:not(:first-child) {
-  margin-top: 20px;
+  // margin-top: 20px; //----------------
 
     @include for-tablet-up {
-      margin-top: 30px;
+      // margin-top: 30px; //---------------
+    // margin: 15px 10px; //----------
     }
 
     @include for-desktop-up {
@@ -126,9 +138,11 @@
 
 
   @include for-tablet-up {
-      width: 236px;
-      margin-top: 30px;
-      margin-left: 20px; 
+      // width: 236px;//---------------
+      // flex-basis: calc((100% - 50px) / 2);
+      margin: 15px 10px;
+      // margin-top: 30px;----------------------
+      // margin-left: 20px; ---------------------
       }
 
   @include for-desktop-up {
@@ -145,6 +159,26 @@
 
   @include for-tablet-up {
     padding-bottom: 0;
+  }
+}
+
+.benefits__item:nth-child(odd) {
+  @include for-tablet-up {
+    width: 236px;
+  }
+
+  @include for-desktop-up {
+    width: 356px;
+  }
+}
+
+.benefits__item:nth-child(even) {
+  @include for-tablet-up {
+    width: 186px;
+  }
+
+  @include for-desktop-up {
+    width: 356px;
   }
 }
 
