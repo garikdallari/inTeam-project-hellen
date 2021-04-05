@@ -1,5 +1,9 @@
 .howwedo {
   padding: 50px 0px;
+
+  @include for-desktop-up {
+    padding: 130px 0px;
+  }
 }
 
 .howwedo__container {
@@ -39,10 +43,10 @@
 
 .howwedo-list__item {
   max-width: 280px;
-
   text-align: center;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   padding: 30px 18px 26px 18px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
