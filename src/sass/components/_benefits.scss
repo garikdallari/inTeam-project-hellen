@@ -73,14 +73,30 @@
 }
 
 .benefits-wrapper {
+  max-width: 688px;
+  padding-left: 98px;
   padding-top: 30px;
   padding-bottom: 25px;
-  padding-left: 98px;
-  padding-right: 118px;
+  padding-right: 10px;
 
   background-color: $bg-white-color;
 
   box-shadow: -5px 8px 26px $shadow-color;
+
+  @include for-phone-only {
+    padding-left: 30px;
+  }
+
+  @include for-desktop-up {
+    position: absolute;
+    top: -199px;
+    left: 0;
+
+    padding-left: 44px;
+    padding-bottom: 70px;
+    padding-top: 38px;
+    min-width: 100%;
+  }
 
 }
 
@@ -88,8 +104,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
-  padding-top: 20px;
+  // width: 100%;
+  // padding-top: 20px;
   // padding-left: 30px;//------------
   
   list-style-type: none;
@@ -105,16 +121,16 @@
     // padding-bottom: 25px;//--------------
   }
 
-  @include for-desktop-up {
-    position: absolute;
-    top: -199px;
-    left: 0;
+  // @include for-desktop-up {
+  //   position: absolute;
+  //   top: -199px;
+  //   left: 0;
 
-    padding-left: 44px;
-    padding-bottom: 70px;
-    padding-top: 38px;
-    min-width: 100%;
-  }
+  //   padding-left: 44px;
+  //   padding-bottom: 70px;
+  //   padding-top: 38px;
+  //   min-width: 100%;
+  // }
 }
 
 .benefits__item {
