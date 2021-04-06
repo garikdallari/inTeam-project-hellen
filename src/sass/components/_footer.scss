@@ -11,10 +11,12 @@
   @include for-tablet-up {
     flex-direction: initial;
     justify-content: space-between;
+    padding: 40px 0px;
   }
 
   @include for-desktop-up {
     justify-content: flex-start;
+    padding: 52px 0px;
   }
 }
 
