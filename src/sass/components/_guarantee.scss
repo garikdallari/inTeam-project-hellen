@@ -8,9 +8,12 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  @include for-tablet-up {
+    padding-left: 79px;
+    padding-right: 50px;
+  }
   @include for-desktop-up {
-    padding-top: 50px;
-    padding-bottom: 45px;
+    padding: 50px 112px 45px 112px;
   }
 }
 
@@ -72,6 +75,10 @@
   @include for-desktop-up {
     @include font-silo(500, 20px, 140%, 0.03em, $primary-title-color);
   }
+}
+
+.guarantee-list__decoration-item {
+  color: $accent-color;
 }
 
 .guarantee-list__accent-text {
