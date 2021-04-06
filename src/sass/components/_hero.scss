@@ -1,38 +1,37 @@
-.hero-container { 
+.hero-container {
   position: relative;
   padding-top: 109px;
   padding-bottom: 47px;
   min-height: 618px;
-  
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   background-image: url(../images/images-mobile/hero-mobile-bg.png);
 
-   @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
   }
-  
+
   background-position-x: -64px;
 
   @include for-tablet-up {
-    background-position-x: 0;}
+    background-position-x: 0;
+  }
 }
 
 .hero__title {
-margin-bottom: 30px;
+  margin-bottom: 30px;
 
-@include font-silo (800, 20px, 1.36, 0.03em, $primary-title-color);
+  @include font-silo(800, 20px, 1.36, 0.03em, $primary-title-color);
 }
 
 .hero__text {
   margin-bottom: 30px;
-  
-  
-  @include font-silo (700, 14px, 1.57, 0.08em, $primary-title-color);
+
+  @include font-silo(700, 14px, 1.57, 0.08em, $primary-title-color);
 
   &--grey {
     font-weight: 500;
@@ -43,7 +42,6 @@ margin-bottom: 30px;
     font-weight: 500;
     color: $accent-color;
   }
- 
 }
 
 .hero__btn {
@@ -52,13 +50,12 @@ margin-bottom: 30px;
   margin-bottom: 30px;
 }
 
-
-.hero-thumb { 
+.hero-thumb {
   height: 178px;
 }
 
 .hero__img {
-height: 100%;
-width: 100%;
-object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
