@@ -181,9 +181,33 @@
   }
 }
 
+
+.partition-list--left {
+  @include for-tablet-up {
+    width: 176px;
+  }
+}
+
+.partition-list--center {
+  @include for-tablet-up {
+    width: 155px;
+  }
+}
+
+.partition-list--right {
+  @include for-tablet-up {
+    width: 110px;
+  }
+}
+
+.partition-list__item {
+  @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
+  text-transform: none;
+
 .partition-list:first-child {
   position: relative;
   padding-top: 5px;
+
 
   @include for-desktop-up {
     padding-top: 25px;
