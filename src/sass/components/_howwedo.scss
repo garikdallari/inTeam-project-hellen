@@ -107,10 +107,13 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
+  transform: scaleX(1);
+  transition: 250ms transform ease-in-out;
 
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {
     background-color: $secondary-title-color;
+    transform: scaleX(15);
   }
 }
 
