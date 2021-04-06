@@ -45,6 +45,10 @@
   transition: $type $duration $timing-function, $type2 $duration $timing-function;
 }
 
+@mixin transition3($type, $type2, $type3, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $timing-function, $type2 $duration $timing-function, $type3 $duration $timing-function;
+}
+
 // ===== Стили текста =====
 // @include font-silo (500, 24px, 1.667, 0.02em, $accent-color);
 @mixin font-silo($weight, $size, $lh, $ls, $color) {
