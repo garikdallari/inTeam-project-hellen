@@ -46,6 +46,8 @@
   
   text-transform: uppercase;
 
+  @include transition(color);
+  
   &:hover,
   &:focus {
     color: $accent-color;

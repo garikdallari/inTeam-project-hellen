@@ -185,7 +185,7 @@ color: $accent-color;
 
   .contacts-form__input:invalid {
     color: $secondary-title-color;
-    background-color: rgb(255, 0, 0);
+    background-color: $error-color;
   }
 
   .btn {
