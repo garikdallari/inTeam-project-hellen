@@ -1,0 +1,139 @@
+.advantages__container {
+
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 480px;
+  padding-bottom: 50px;
+
+  @include for-tablet-up {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    max-width: 768px;
+  }
+
+  @include for-desktop-up {
+    padding-top: 100px;
+    padding-bottom: 130px;
+    max-width: 1344px;
+  }
+}
+
+.advantages__list {
+  margin-right: auto;
+  margin-left: auto;
+
+  @include for-phone-only {
+    height: 240px;
+  }
+
+  @include for-tablet-up {
+    display: flex;
+  }
+
+  @include for-desktop-up {
+    width: 1344px;
+  }
+}
+
+.advantages__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include for-tablet-up {
+    flex-basis: calc((100% - 42px) / 3);
+  }
+
+  @include for-desktop-up {
+    height: 102px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+.advantages__item:not(:last-child) {
+  @include for-phone-only {
+    margin-bottom: 30px;
+  }
+  @include for-tablet-up {
+    justify-content: space-between;
+    margin-right: 21px;
+  }
+  @include for-desktop-up {
+    justify-content: start;
+    margin-right: 0px;
+  }
+}
+
+.advantages__text {
+  width: 146px;
+
+  @include font-silo(bold, 14px, 1.4, 0.08em, $primary-title-color);
+
+  @include for-desktop-up {
+    font-size: 20px;
+    width: 366px;
+    transform: translateX(-18px);
+  }
+}
+
+.advantages__item--svg1::before {
+  content: '';
+  display: block;
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url(../../images/adventages-man-mob.svg);
+  background-size: 59px 60px;
+  background-repeat: no-repeat;
+
+  @include for-desktop-up {
+    width: 100px;
+    height: 102px;
+    background-size: 100px 102px;
+    margin-right: 0px;
+    background-image: url(../../images/about-svg1-desktop.svg);
+  }
+}
+
+.advantages__item--svg2::before {
+  content: '';
+  display: block;
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url(../../images/adventages-mobile-mob.svg);
+  background-size: 59px 60px;
+  background-repeat: no-repeat;
+
+  @include for-desktop-up {
+    width: 100px;
+    height: 102px;
+    background-size: 100px 102px;
+    margin-right: 0px;
+    background-image: url(../../images/about-svg2-desktop.svg);
+  }
+}
+
+.advantages__item--svg3::before {
+  content: '';
+  display: block;
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+  background-image: url(../../images/adventages-umbrela-mob.svg);
+  background-size: 59px 60px;
+  background-repeat: no-repeat;
+
+  @include for-desktop-up {
+    width: 100px;
+    height: 102px;
+    background-size: 100px 102px;
+    margin-right: 0px;
+    background-image: url(../../images/about-svg3-desktop.svg);
+  }
+}

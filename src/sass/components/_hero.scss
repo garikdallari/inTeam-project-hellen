@@ -1,22 +1,30 @@
-.hero-container { 
+.hero-container {
   position: relative;
   padding-top: 109px;
   padding-bottom: 47px;
   min-height: 618px;
-  box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+
   background-size: cover;
   background-repeat: no-repeat;
- 
-  background-position-y:  40px;
+
+  background-position-y: 40px;
   background-position-x: -64px;
 
-  
   background-image: url(../images/images-mobile/hero-mobile-bg.png);
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
+  }
+
+  background-position-x: -64px;
+
+  @include for-tablet-up {
+    background-position-x: 0;
   }
 
   @include for-tablet-up {
@@ -27,9 +35,8 @@
 
     padding-top: 158px;
     padding-bottom: 92px;
-    
-    
-    min-height: 556px; 
+
+    min-height: 556px;
     background-image: url(../images/images-tablet/hero-tablet-bg.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -42,12 +49,12 @@
   @include for-desktop-up {
     padding-top: 228px;
     padding-bottom: 145px;
-     
+
     min-height: 878px;
 
     background-size: cover;
     background-position: 0;
-    
+
     background-image: url(../images/images-desktop/hero-desktop-bg.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -56,7 +63,6 @@
       background-image: url(../images/images-desktop/hero-desktop-bg@2x.png);
     }
   }
-
 }
 
 .hero-content {
@@ -67,17 +73,18 @@
   @include for-desktop-up {
     max-width: 642px;
   }
-
 }
 
 .hero__title {
   margin-bottom: 30px;
 
-  @include font-silo (800, 20px, 1.36, 0.03em, $primary-title-color);
+  @include font-silo(800, 20px, 1.36, 0.03em, $primary-title-color);
 
-  @include for-tablet-up  {
-     font-size: 26px;
-     line-height: 1.3;
+  @include font-silo(800, 20px, 1.36, 0.03em, $primary-title-color);
+
+  @include for-tablet-up {
+    font-size: 26px;
+    line-height: 1.3;
   }
 
   @include for-desktop-up {
@@ -88,8 +95,10 @@
 
 .hero__text {
   margin-bottom: 30px;
-  
-  @include font-silo (700, 14px, 1.57, 0.08em, $primary-title-color);
+
+  @include font-silo(700, 14px, 1.57, 0.08em, $primary-title-color);
+
+  @include font-silo(700, 14px, 1.57, 0.08em, $primary-title-color);
 
   &--grey {
     font-weight: 500;
@@ -99,7 +108,7 @@
   &--orange {
     color: $accent-color;
   }
- 
+
   @include for-tablet-up {
     display: flex;
     flex-direction: column;
@@ -111,7 +120,6 @@
     line-height: 1.64;
     margin-bottom: 40px;
   }
-  
 }
 
 .hero__btn {
@@ -124,36 +132,32 @@
     display: inline-block;
     margin: 0px;
   }
-
 }
 
-
-.hero-thumb { 
+.hero-thumb {
   position: absolute;
-  height: 178px;
-  
-  @include for-tablet-up {
-  
-  height: 320px;
-  width: 375px;
-  
-  left: 0;
-  top: 0;
-  
-  transform: translateX(374px) translateY(171px);
-  }
 
+  height: 178px;
+
+  @include for-tablet-up {
+    height: 320px;
+    width: 375px;
+
+    left: 0;
+    top: 0;
+
+    transform: translateX(374px) translateY(171px);
+  }
 
   @include for-desktop-up {
     height: 718px;
     width: 842px;
-    transform: translateX(608px) translateY(150px);  
+    transform: translateX(608px) translateY(150px);
   }
-
 }
 
 .hero__img {
-height: 100%;
-width: 100%;
-object-fit: contain;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
