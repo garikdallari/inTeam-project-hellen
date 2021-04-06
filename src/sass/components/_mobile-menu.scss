@@ -24,9 +24,6 @@
     display: none;
   }
 }
-.mobile-nav_link:active .mobile-menu {
-  transform: translateX(100%);
-}
 
 .mobile-menu.is-open {
   transform: translateX(0);
