@@ -8,11 +8,22 @@
   background-color: $accent-color;
   border-color: transparent;
 
+ 
+
   @include for-desktop-up {
     padding: 26px 25px;
     min-width: 354px;
     height: 70px;
 
-    @include font-silo(700, 14px, 1.21, 0.14em, $secondary-title-color);
+    font-size: 14px;
+    letter-spacing: 0.14em;
+
+  }
+
+  &:hover, &:focus {
+    color: $bg-black-color;
+    background-color:  #f76f14;
+    border: 2px $bg-black-color solid;
+    border-radius: 10px;
   }
 }

@@ -1,0 +1,11 @@
+.modal {
+  background-color: $secondary-title-color;
+  border: 2px solid $accent-color;
+  width: 500px;
+  height: 500px;
+  padding: 30px;
+}
+
+.modal__btn--close {border-radius: 50%;
+
+}

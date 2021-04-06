@@ -1,0 +1,43 @@
+<div class="backdrop is-hidden" data-modal>
+
+  <div class="modal">
+
+    <a class="modal__logo" href="#">
+      <svg width="80px" height="28px">
+        <use href="../images/icons.svg#icon-logo-black"></use>
+      </svg>
+    </a>
+  
+      <button data-modal-close class="modal__btn--close">
+        <svg width="20px" height="20px"> 
+          <use href="../src/images/icons.svg#icon-mob-menu-close"></use>
+        </svg>
+      </button>
+
+      <form class="modal-form">
+          <p class="modal__title">Заказать звонок!</p>
+          
+          <label class="modal__label" for="name">Имя</label>
+          
+          <div class="input-wrapper">
+            <input class="modal__input" type="username" name="name" id="name"> 
+            <svg class="modal__icon" width="18px" height="18px"> 
+                <use href="./images/icons.svg#person"></use>
+            </svg>
+          </div>  
+
+          <label class="modal__label" for="tel">Телефон</label>
+          
+          <div class="input-wrapper">
+              <input class="modal__input" type="tel"  name="tel" id="tel">
+              <svg class="modal__icon" width="18px" height="18px"> 
+                  <use href="./images/icons.svg#phone-modal"></use>
+              </svg>
+          </div>
+
+          <p>Мы свяжемся с Вами в ближайшее время</p>
+
+          <button class="btn modal-btn" type="submit">Перезвоните мне</button>
+      </form>
+  </div>
+</div>
