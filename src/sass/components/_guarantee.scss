@@ -7,6 +7,11 @@
   background-color: $garant-bg-color;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  @include for-desktop-up {
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
 }
 
 .guarantee__title {
