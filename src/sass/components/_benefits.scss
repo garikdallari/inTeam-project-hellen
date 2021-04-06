@@ -1,5 +1,6 @@
 .benefits {
-  background-image: linear-gradient(to top, $secondary-title-color 62%,  $primary-title-color 38%);  
+  background-color: $bg-white-color;
+  background-image: linear-gradient(to top, $bg-white-color 62%,  $bg-black-color 38%);  
 
   @include for-desktop-up {
     background-image: none;
@@ -119,28 +120,27 @@
 
 .benefits__item {
   position: relative;
-  padding-left: 30px;
+  padding-left: 20px;
   
   @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
   
-  &:not(:first-child) {
-    @include for-desktop-up {
-      margin-top: 32px;
-    }
-  }
-
-
-
   @include for-tablet-up {
     margin: 15px 10px;
-      }
+  }
 
   @include for-desktop-up {
   margin-top: 32px;
-  margin-left: 40px; 
-  width: 356px;
+  margin-left: 40px;
+  margin-right: 0;
+  padding-left: 30px;
 
   font-size: 20px;
+  }
+}
+
+.benefits__item:not(:first-child) {
+  @include for-desktop-up {
+    margin-top: 32px;
   }
 }
 
@@ -158,7 +158,7 @@
   }
 
   @include for-desktop-up {
-    width: 356px;
+    width: 386px;
   }
 }
 
@@ -168,7 +168,7 @@
   }
 
   @include for-desktop-up {
-    width: 356px;
+    width: 386px;
   }
 }
 
@@ -181,7 +181,7 @@
 .benefits__dash {
   position: absolute;
   top: 10px;
-  left: 10px;
+  left: 0px;
   display: inline-block;
   width: 14px;
   height: 1px;
@@ -189,6 +189,7 @@
   background-color: $accent-color;
 
   @include for-desktop-up {
+    width: 20px;
     top: 13px;
   }
 }
@@ -197,10 +198,10 @@
   padding-top: 10px;
 
   text-align: left;
-
+  
   transform: translateX(-20px);
-}
 
-.section-test {
-  height: 440px;
+  @include for-desktop-up {
+    transform: translateX(-30px);
+  }
 }
