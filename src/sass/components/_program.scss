@@ -1,5 +1,5 @@
 .program {
-  background-color: $primary-title-color;
+  background-color: $bg-black-color;
   overflow: hidden;
 }
 
@@ -43,11 +43,11 @@
 
   @include for-desktop-up {
     min-width: 1344px;
-    padding: 120px 40px 234px;
+    padding: 120px 15px 234px;
 
     background: {
       image: url(../images/images-desktop/program-desktop.png);
-      position: bottom 60px left 0;
+      position: bottom 34px left 0;
       repeat: no-repeat;
       size: 540px 402px;
     }
@@ -67,6 +67,7 @@
     background: {
       repeat: no-repeat;
       size: 674px 502px;
+      position: bottom 60px left 0;
     }
   }
 }
@@ -94,12 +95,12 @@
   padding-left: 25px;
   margin: 0 auto;
 
+  list-style-type: none;
+  counter-reset: my-counter;
+
   @include for-phone-only {
     max-width: 200px;
   }
-
-  list-style-type: none;
-  counter-reset: my-counter;
 
   @include for-tablet-up {
     padding-left: 56px;
@@ -115,17 +116,12 @@
 }
 
 .program__interval {
-  &::before {
-    content: counter(my-counter) ' ';
-    counter-increment: my-counter; 
-  }
+  @include font-silo(700, 14px, 2, 0.08em, $secondary-title-color);
+  text-transform: uppercase;
 
   & + & {
     margin-top: 40px;
   }
-
-  @include font-silo(700, 14px, 2, 0.08em, $secondary-title-color);
-  text-transform: uppercase;
 
   @include for-tablet-up {
     & + & {
@@ -135,13 +131,19 @@
 
   @include for-desktop-up {
     width: 240px;
+    
+    @include font-silo(null, 20px, 1.4, null, null);
+    
     & + & {
       margin-top: 0;
       margin-left: 30px;
     }
-
-    @include font-silo(null, 20px, 1.4, null, null);
   }
+}
+
+.program__interval::before {
+  content: counter(my-counter) ' ';
+  counter-increment: my-counter; 
 }
 
 .program__wrapper {
@@ -155,57 +157,30 @@
 }
 
 .partition-list {
-  &:first-child {
-    position: relative;
-    padding-top: 5px;
-
-    @include for-desktop-up {
-      padding-top: 25px;
-    }
-
-    &::before {
-      position: absolute;
-      display: block;
-      top: -20px;
-      left: -31px;
-      content: '';
-      width: 12px;
-      height: 12px;
-
-      border-radius: 50%;
-      background-color: $accent-color;
-
-      @include for-tablet-up {
-        left: -61px;
-      }
-
-      @include for-desktop-up {
-        width: 16px;
-        height: 16px;
-        left: 0;
-        top: -96px;
-      }
-    }
-  }
-
   & + & {
     margin-top: 8px;
   }
-
+  
   @include for-tablet-up {
     & + & {
       margin-left: 50px;
     }
   }
+  
+  @include for-desktop-up {    
+    &:first-child {
+      width: 240px;
+    }
 
-  @include for-desktop-up {
     & + & {
+      width: 240px;
       margin-left: 0;
       margin-top: 0;
       padding-top: 25px;
     }
   }
 }
+
 
 .partition-list--left {
   @include for-tablet-up {
@@ -229,26 +204,83 @@
   @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
   text-transform: none;
 
-  &::before {
-    content: '';
-    display: inline-block;
-    height: 1px;
-    width: 10px;
-    margin-right: 6px;
+.partition-list:first-child {
+  position: relative;
+  padding-top: 5px;
 
-    transform: translateY(-3px);
 
-    border-bottom: 1px solid $accent-color;
+  @include for-desktop-up {
+    padding-top: 25px;
+  }
+}
 
-    @include for-desktop-up {
-      width: 20px;
-      margin-right: 9px;
-      transform: translateY(-5px);
-    }
+.partition-list:first-child::before {
+  position: absolute;
+  display: block;
+  top: -20px;
+  left: -31px;
+  content: '';
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+  background-color: $accent-color;
+
+  @include for-tablet-up {
+    left: -61px;
   }
 
   @include for-desktop-up {
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: -96px;
+  }
+}
+
+.partition-list--left {
+  @include for-tablet-up {
+    width: 176px;
+  }
+}
+
+.partition-list--center {
+  @include for-tablet-up {
+    width: 155px;
+  }
+}
+
+.partition-list--right {
+  @include for-tablet-up {
+    width: 110px;
+  }
+}
+
+.partition-list__item {
+  @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
+  
+  text-transform: none;
+
+  @include for-desktop-up {
     font-size: 20px;
+  }
+}
+
+.partition-list__item::before {
+  content: '';
+  display: inline-block;
+  height: 1px;
+  width: 10px;
+  margin-right: 6px;
+
+  border-bottom: 1px solid $accent-color;
+  
+  transform: translateY(-3px);
+
+  @include for-desktop-up {
+    width: 20px;
+    margin-right: 9px;
+    transform: translateY(-5px);
   }
 }
 
