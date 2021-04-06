@@ -20,23 +20,18 @@
 .problems__container {
   @include for-phone-only {
     padding-top: 50px;
-    // padding-bottom: 50px;
     max-width: 480px;
   }
 
   @include for-tablet-up {
     width: 768px;
     padding-top: 60px;
-    // padding-bottom: 50px;
   }
 
   @include for-desktop-up {
     position: relative;
     height: 560px;
-    // padding-top: 100px;
     width: 1344px;
-    // padding-left: 183px;
-    // padding-right: 183px;
   }
 }
 
@@ -140,6 +135,10 @@
   color: $accent-color;
   content: '0' counter(my-count) ' ';
   counter-increment: my-count;
+
+  @include for-desktop-up {
+    font-size: 20px;
+  }
 }
 
 .problems-orange-line {
@@ -154,6 +153,7 @@
 
   @include for-desktop-up {
     top: 13px;
+    height: 2px;
   }
 }
 
@@ -161,4 +161,8 @@
   padding-top: 10px;
   text-align: left;
   transform: translateX(-20px);
+
+  @include for-desktop-up {
+    font-size: 20px;
+  }
 }
