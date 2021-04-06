@@ -5,8 +5,8 @@
 
   @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
   text-transform: uppercase;
-  background-color: $accent-color;
-  border-color: transparent;
+  background-color: transparent;
+  border-color: $accent-color;
 
  
 
@@ -18,12 +18,13 @@
     font-size: 14px;
     letter-spacing: 0.14em;
 
+    @include transition2(color, backgound-color);
   }
 
   &:hover, &:focus {
     color: $bg-black-color;
-    background-color:  #f76f14;
+    background-color: $accent-color;
     border: 2px $bg-black-color solid;
-    border-radius: 10px;
+    border-radius: 4px;
   }
 }
