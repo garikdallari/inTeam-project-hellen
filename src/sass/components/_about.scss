@@ -68,6 +68,10 @@
   }
   &:last-child {
     margin-bottom: 43px;
+
+    @include for-desktop-up {
+      margin-bottom: 50px;
+    }
   }
 
   &:first-child {
@@ -98,11 +102,11 @@
   transform: translateY(85px);
 
   @include for-tablet-up {
-    transform: translateY(75px);
+    transform: translateY(70px);
   }
 
   @include for-desktop-up {
-    transform: translateY(55px);
+    transform: translateY(65px);
     width: 25px;
   }
 }
