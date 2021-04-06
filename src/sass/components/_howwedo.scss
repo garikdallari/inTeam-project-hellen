@@ -2,7 +2,8 @@
   padding: 50px 0px;
 
   @include for-desktop-up {
-    padding: 130px 0px;
+    padding-top: 280px;
+    padding-bottom: 130;
   }
 }
 
