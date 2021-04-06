@@ -1,5 +1,5 @@
 .program {
-  background-color: $primary-title-color;
+  background-color: $bg-black-color;
   overflow: hidden;
 }
 
@@ -131,7 +131,7 @@
   @include for-desktop-up {
     width: 240px;
     
-        @include font-silo(null, 20px, 1.4, null, null);
+    @include font-silo(null, 20px, 1.4, null, null);
     
     & + & {
       margin-top: 0;
@@ -229,6 +229,7 @@
 
 .partition-list__item {
   @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
+  
   text-transform: none;
 
   @include for-desktop-up {
@@ -243,9 +244,9 @@
   width: 10px;
   margin-right: 6px;
 
-  transform: translateY(-3px);
-
   border-bottom: 1px solid $accent-color;
+  
+  transform: translateY(-3px);
 
   @include for-desktop-up {
     width: 20px;
