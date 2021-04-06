@@ -42,6 +42,9 @@
 
 .header-nav_link {
 
+  padding-top:25px;
+  padding-bottom: 25px;
+  
   @include font-silo (700, 14px, 1.21, 0.02em, $primary-text-color);
   
   text-transform: uppercase;
