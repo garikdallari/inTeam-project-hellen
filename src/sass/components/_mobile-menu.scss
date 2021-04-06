@@ -11,9 +11,10 @@
 
   width: 100vw;
   height: 100vh;
+  min-width: 100%;
   background: rgba(17, 21, 24, 0.9);
 
-  transform: translateX(100%);
+  transform: translateX(110%);
 
   @include for-tablet-up {
     padding: 42px 40px;
