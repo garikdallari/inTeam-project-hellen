@@ -113,7 +113,16 @@
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {
     background-color: $secondary-title-color;
-    transform: scaleX(15);
+
+    @include for-phone-only {
+      transform: scaleX(5);
+    }
+    @include for-tablet-up {
+      transform: scaleX(10);
+    }
+    @include for-desktop-up {
+      transform: scaleX(15);
+    }
   }
 }
 
