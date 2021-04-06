@@ -1,6 +1,6 @@
 .benefits {
   background-color: $bg-white-color;
-  background-image: linear-gradient(to top, $bg-white-color 62%,  $bg-black-color 38%);  
+  background-image: linear-gradient(to top, $bg-white-color 62%, $bg-black-color 38%);
 
   @include for-desktop-up {
     background-image: none;
@@ -46,13 +46,13 @@
   left: 20px;
   width: 180px;
 
-  @include font-silo (800, 20px, 1.3, 0.03em, $secondary-title-color);
+  @include font-silo(800, 20px, 1.3, 0.03em, $secondary-title-color);
 
   text-align: left;
 
   @include for-tablet-up {
     width: 370px;
-    left: calc(50% - 370px/2);
+    left: calc(50% - 370px / 2);
 
     font-size: 26px;
 
@@ -60,15 +60,15 @@
   }
 
   @include for-desktop-up {
-    position: absolute; 
+    position: absolute;
     width: 1px;
     height: 1px;
     margin: -1px;
-    border: 0; 
+    border: 0;
     padding: 0;
     white-space: nowrap;
     clip-path: inset(100%);
-    clip: rect(0 0 0 0 );
+    clip: rect(0 0 0 0);
     overflow: hidden;
   }
 }
@@ -98,15 +98,13 @@
     padding-top: 38px;
     min-width: 100%;
   }
-
-
 }
 
 .benefits__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+
   list-style-type: none;
   counter-reset: my-count;
 
@@ -122,21 +120,21 @@
 .benefits__item {
   position: relative;
   padding-left: 30px;
-  
-  @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
-  
+
+  @include font-silo(700, 14px, 1.43, 0.08em, $primary-title-color);
+
   &:not(:first-child) {
     @include for-desktop-up {
       margin-top: 32px;
     }
-
+  }
 }
 
 .benefits__list {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  
+
   list-style-type: none;
   counter-reset: my-count;
 
@@ -146,35 +144,26 @@
     flex-direction: row;
     padding-top: 0;
     margin: -15px -10px;
-
   }
 }
-
-
-
-
-  @include for-tablet-up {
-    margin: 15px 10px;
-      }
 
 .benefits__item {
   position: relative;
   padding-left: 20px;
-  
-  @include font-silo (700, 14px, 1.43, 0.08em, $primary-title-color);
-  
+
+  @include font-silo(700, 14px, 1.43, 0.08em, $primary-title-color);
+
   @include for-tablet-up {
     margin: 15px 10px;
   }
 
-
   @include for-desktop-up {
-  margin-top: 32px;
-  margin-left: 40px;
-  margin-right: 0;
-  padding-left: 30px;
+    margin-top: 32px;
+    margin-left: 40px;
+    margin-right: 0;
+    padding-left: 30px;
 
-  font-size: 20px;
+    font-size: 20px;
   }
 }
 
@@ -198,11 +187,9 @@
   }
 
   @include for-desktop-up {
-
     width: 356px;
 
     width: 386px;
-
   }
 }
 
@@ -212,11 +199,9 @@
   }
 
   @include for-desktop-up {
-
     width: 356px;
 
     width: 386px;
-
   }
 }
 
@@ -246,7 +231,7 @@
   padding-top: 10px;
 
   text-align: left;
-  
+
   transform: translateX(-20px);
 
   @include for-desktop-up {

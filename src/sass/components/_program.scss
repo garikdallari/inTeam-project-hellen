@@ -104,7 +104,7 @@
 
   @include for-tablet-up {
     padding-left: 56px;
-    margin-left: 63px;  
+    margin-left: 63px;
   }
 
   @include for-desktop-up {
@@ -131,9 +131,9 @@
 
   @include for-desktop-up {
     width: 240px;
-    
+
     @include font-silo(null, 20px, 1.4, null, null);
-    
+
     & + & {
       margin-top: 0;
       margin-left: 30px;
@@ -143,7 +143,7 @@
 
 .program__interval::before {
   content: counter(my-counter) ' ';
-  counter-increment: my-counter; 
+  counter-increment: my-counter;
 }
 
 .program__wrapper {
@@ -160,14 +160,14 @@
   & + & {
     margin-top: 8px;
   }
-  
+
   @include for-tablet-up {
     & + & {
       margin-left: 50px;
     }
   }
-  
-  @include for-desktop-up {    
+
+  @include for-desktop-up {
     &:first-child {
       width: 240px;
     }
@@ -180,7 +180,6 @@
     }
   }
 }
-
 
 .partition-list--left {
   @include for-tablet-up {
@@ -200,14 +199,9 @@
   }
 }
 
-.partition-list__item {
-  @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
-  text-transform: none;
-
 .partition-list:first-child {
   position: relative;
   padding-top: 5px;
-
 
   @include for-desktop-up {
     padding-top: 25px;
@@ -258,7 +252,7 @@
 
 .partition-list__item {
   @include font-silo(700, 12px, 1.649, 0.08em, $accent-color);
-  
+
   text-transform: none;
 
   @include for-desktop-up {
@@ -274,7 +268,7 @@
   margin-right: 6px;
 
   border-bottom: 1px solid $accent-color;
-  
+
   transform: translateY(-3px);
 
   @include for-desktop-up {
