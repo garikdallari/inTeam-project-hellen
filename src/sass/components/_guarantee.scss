@@ -21,6 +21,7 @@
 
   @include for-desktop-up {
     @include font-silo(800, 46px, 130%, 0.03em, $primary-title-color);
+    margin-bottom: 50px;
   }
 }
 
