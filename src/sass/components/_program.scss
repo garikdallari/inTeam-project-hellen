@@ -43,11 +43,11 @@
 
   @include for-desktop-up {
     min-width: 1344px;
-    padding: 120px 40px 234px;
+    padding: 120px 15px 234px;
 
     background: {
       image: url(../images/images-desktop/program-desktop.png);
-      position: bottom 60px left 0;
+      position: bottom 34px left 0;
       repeat: no-repeat;
       size: 540px 402px;
     }
@@ -67,6 +67,7 @@
     background: {
       repeat: no-repeat;
       size: 674px 502px;
+      position: bottom 60px left 0;
     }
   }
 }
@@ -159,16 +160,20 @@
   & + & {
     margin-top: 8px;
   }
-
+  
   @include for-tablet-up {
     & + & {
       margin-left: 50px;
     }
   }
-
+  
   @include for-desktop-up {    
+    &:first-child {
+      width: 240px;
+    }
+
     & + & {
-      width: 176px;
+      width: 240px;
       margin-left: 0;
       margin-top: 0;
       padding-top: 25px;
