@@ -2,11 +2,9 @@
   padding: 50px 0px;
 
   @include for-desktop-up {
-
     padding: 130px 0px;
 
     padding-top: 280px;
-
   }
 }
 
@@ -51,7 +49,6 @@
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   padding: 30px 18px 26px 18px;
   @include transition(background-color);
-
   @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -75,6 +72,8 @@
   &:hover,
   &:focus {
     background-color: $accent-color;
+    transform: scale(1.03);
+    box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.35);
   }
 }
 
@@ -108,10 +107,22 @@
   width: 20px;
   height: 2px;
   background-color: $accent-color;
+  transform: scaleX(1);
+  transition: 250ms transform ease-in-out;
 
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {
     background-color: $secondary-title-color;
+
+    @include for-phone-only {
+      transform: scaleX(5);
+    }
+    @include for-tablet-up {
+      transform: scaleX(10);
+    }
+    @include for-desktop-up {
+      transform: scaleX(15);
+    }
   }
 }
 

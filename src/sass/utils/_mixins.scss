@@ -37,12 +37,16 @@
 
 // ===== Анимация =====
 // @include transition(transform);
-@mixin transition($type, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
-  transition: $type $duration $timing-function;
+@mixin transition($type, $duration: 500ms, $delay: 100ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $delay $timing-function;
 }
 
-@mixin transition2($type, $type2, $duration: 250ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
-  transition: $type $duration $timing-function, $type2 $duration $timing-function;
+@mixin transition2($type, $type2, $duration: 500ms, $delay: 100ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $delay $timing-function, $type2 $duration $timing-function;
+}
+
+@mixin transition3($type, $type2, $type3, $duration: 500ms, $delay: 100ms, $timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
+  transition: $type $duration $delay $timing-function, $type2 $duration $timing-function, $type3 $duration $timing-function;
 }
 
 // ===== Стили текста =====

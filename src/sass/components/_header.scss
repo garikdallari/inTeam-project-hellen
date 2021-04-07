@@ -41,6 +41,7 @@
 }
 
 .header-nav_link {
+  display: block;
 
   padding-top:25px;
   padding-bottom: 25px;
@@ -49,11 +50,13 @@
   
   text-transform: uppercase;
 
-  @include transition(color);
+  @include transition2 (color, transform);
   
   &:hover,
   &:focus {
     color: $accent-color;
+
+    transform: scale(1.1);
   }
 
 }

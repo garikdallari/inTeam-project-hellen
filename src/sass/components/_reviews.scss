@@ -1,6 +1,9 @@
 .reviews{
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding:50px 0px 50px 0px;
+
+  @media screen and (min-width:1344px) {
+    padding: 130px 0 130px 0px;
+  }
 }
 
 .container__reviews {
@@ -22,6 +25,7 @@ margin-bottom: 20px;
 
 @media screen and (min-width:768px) {
 font-size: 26px;
+margin-bottom: 30px;
 }
 
 @media screen and (min-width:1344px) {
@@ -31,27 +35,22 @@ font-size: 26px;
 
 .reviews-card {
   min-width: 280px;
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 30px;
+  padding: 20px 20px 30px 20px;
   margin-bottom: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 
   @media screen and (min-width:768px) {
-    min-width: 688px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    max-width: 688px;
+    padding: 40px;
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width:1344px) {
-    min-width: 1090px;
-    padding-top: 50px;
-    padding-left: 82px;
-    padding-right: 112px;
-    padding-bottom: 51px;
+    max-width: 1090px;
+    padding: 50px 112px 51px 82px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -68,8 +67,13 @@ font-size: 26px;
 .reviews-card__bx {
   @media screen and(min-width:768px) {
   min-width: 412px;
-  margin-left: 40px;
-}
+  margin-left: 46px;
+  }
+
+  @media screen and(min-width:1344px) {
+    min-width: 706px;
+    margin-left: 40px;
+  }
 }
 
 .reviews-slider {
@@ -80,16 +84,25 @@ font-size: 26px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
 
   @media screen and (min-width:767px) {
-    margin-bottom: 26px;
     min-width: 150px;
+    margin-bottom: 26px;
   }
 }
 
 .reviews-slider__item {
   margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+  
+  @media screen and (min-width:767px) {
+    margin-right: 30px;
+  }
+  
 }
 
 .reviews-slider__item--hidden {
@@ -100,9 +113,9 @@ font-size: 26px;
 
 .reviews-card__svg {
   display: flex;
+  margin-bottom: 26px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 20px;
 }
 
 .reviews-card__title {
@@ -121,11 +134,13 @@ font-size: 26px;
     text-align: start;
     font-size: 20px;
     line-height: 24px;
+    margin-bottom: 20px;
   }
 
   @media screen and (min-width:1344px) {
     font-size: 30px;
     line-height: 37px;
+    margin-bottom: 10px;
 }
 }
 
@@ -143,6 +158,7 @@ margin-bottom: 10px;
 
 @media screen and (min-width:767px) {
   text-align: start;
+  margin-bottom: 20px;
 }
 
 @media screen and (min-width:1344px) {
@@ -171,7 +187,7 @@ line-height: 28px;
 }
 .reviews-card__link {
   font-family: 'Montserrat', sans-serif;
-  color: #FF6B09;
+  color: $accent-color;
 font-style: normal;
 font-weight: 500;
 font-size: 12px;
