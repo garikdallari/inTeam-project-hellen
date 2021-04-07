@@ -83,17 +83,25 @@
     @include for-desktop-up {
       display: none;
     }
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transform: scale(1.7);
+    }
   }
 
   &--close {
     fill: $secondary-title-color;
+    
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transform: scale(1.7) rotate(90deg);
+    }
   }
 
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-    transform: scale(1.7) rotate(90deg);
-  }
+ 
 }
 
 .mobile-nav {
