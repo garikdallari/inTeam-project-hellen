@@ -129,12 +129,7 @@
 .hero__btn {
   display: inline-block;
   background-color: $accent-color;
-
-  align-self: center;
-
-  @include for-tablet-up {
-    display: inline-block;
-  }
+  text-align: center;
 }
 
 .hero-thumb {

@@ -60,23 +60,48 @@
   }
 }
 
-.mobile-menu__btn--close {
+
+.mobile-menu__btn {
   display: flex;
   margin-left: auto;
   padding: 0;
 
   border: none;
   background-color: transparent;
-  fill: $secondary-title-color;
 
+  
   @include transition2(transform, color);
+  
+ 
 
-  &:hover,
-  &:focus {
-    fill: $accent-color;
+  &--open {
+    
+    @include for-tablet-up {
+      margin-left: 40px;
+    }
 
-    transform: scale(1.7) rotate(90deg);
+    @include for-desktop-up {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transform: scale(1.7);
+    }
   }
+
+  &--close {
+    fill: $secondary-title-color;
+    
+    &:hover,
+    &:focus {
+      fill: $accent-color;
+      transform: scale(1.7) rotate(90deg);
+    }
+  }
+
+ 
 }
 
 .mobile-nav {
