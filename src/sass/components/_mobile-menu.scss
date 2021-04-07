@@ -97,7 +97,8 @@
 }
 
 .mobile-nav_link {
-  display: block;
+
+  display: inline-block;
 
   @include font-silo(800, 20px, 1.8, 0.03em, $secondary-title-color);
 
