@@ -56,11 +56,12 @@
       margin-bottom: 20px;
     }
   }
-  
+
   @include for-tablet-up {
     max-width: 334px;
     margin-top: 27px;
     margin-left: 20px;
+
     flex-basis: calc((100% / 2 - 27px));
   }
 
@@ -110,7 +111,7 @@
   height: 2px;
   background-color: $accent-color;
   transform: scaleX(1);
-  @include transition (transform);
+  @include transition(transform);
 
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {
