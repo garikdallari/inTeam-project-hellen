@@ -41,14 +41,22 @@
 }
 
 .header-nav_link {
+  display: block;
 
+  padding-top:25px;
+  padding-bottom: 25px;
+  
   @include font-silo (700, 14px, 1.21, 0.02em, $primary-text-color);
   
   text-transform: uppercase;
 
+  @include transition2 (color, transform);
+  
   &:hover,
   &:focus {
     color: $accent-color;
+
+    transform: scale(1.1);
   }
 
 }

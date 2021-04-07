@@ -66,7 +66,11 @@
 }
 
 .hero-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
   @include for-tablet-up {
+    margin: 0px;
     max-width: 315px;
   }
 
@@ -123,14 +127,13 @@
 }
 
 .hero__btn {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
+  display: inline-block;
+  background-color: $accent-color;
+
+  align-self: center;
 
   @include for-tablet-up {
     display: inline-block;
-    margin: 0px;
   }
 }
 
@@ -158,6 +161,6 @@
 
 .hero__img {
   height: 100%;
-  width: 100%;
+  width: 800px;
   object-fit: contain;
 }
