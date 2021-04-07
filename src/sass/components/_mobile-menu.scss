@@ -16,6 +16,8 @@
 
   transform: translateX(110%);
 
+  @include transition (transform);
+
   @include for-tablet-up {
     padding: 42px 40px;
   }
@@ -36,6 +38,8 @@
 }
 
 .mobile__logo {
+  @include transition(transform);
+
   &--white {
     @include for-tablet-up {
       display: none;
@@ -48,6 +52,11 @@
     @include for-tablet-up {
       display: flex;
     }
+  }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
   }
 }
 
