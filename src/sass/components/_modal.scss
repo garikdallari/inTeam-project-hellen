@@ -20,8 +20,9 @@
     visibility: visible;
   }
 
-  &.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(0);
+  &.is-hidden .modal { 
+    transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
   }
 }
 
@@ -38,8 +39,9 @@
   min-height: 300px;
   padding: 40px;
 
-  justify-content: center;
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+
+  @include transition2(transform, opacity);
+  transform: translate(-50%, -50%) scale(1);
 
   @include for-tablet-up {
     width: 500px;
