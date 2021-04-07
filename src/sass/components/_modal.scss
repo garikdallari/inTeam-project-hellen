@@ -34,14 +34,15 @@
   border-radius: 4px;
 
   width: 320px;
-  min-height: 600px;
+  min-height: 300px;
   padding: 40px;
 
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
 
 }
 
-.modal__btn--close {border: none;
+.modal__btn--close {
+  border: none;
   border-color: transparent;
  
 }
