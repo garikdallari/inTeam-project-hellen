@@ -19,6 +19,7 @@
 }
 
 .advantages__list {
+  background-color: teal;
   margin-right: auto;
   margin-left: auto;
 
@@ -31,11 +32,12 @@
   }
 
   @include for-desktop-up {
-    width: 1344px;
+    width: 1314px;
   }
 }
 
 .advantages__item {
+  outline: 1px solid red;
   @include centeredFlex;
   position: relative;
   margin-left: auto;
@@ -46,6 +48,7 @@
   }
 
   @include for-desktop-up {
+    width: 438px;
     height: 102px;
     margin-left: 0px;
     margin-right: 0px;
