@@ -70,6 +70,14 @@
   background-color: transparent;
   align-items:center;
   justify-content: center;
+
+  @include transition2(transform, color);
+  
+    &:hover,
+    &:focus {
+        fill: $accent-color;
+        transform: scale(1.7) rotate(90deg);
+  }
 }
 
 .modal-form {
@@ -82,9 +90,10 @@
   margin-bottom: 30px;
   
   text-align: center;
- 
   @include font-silo(800, 30px, 1.8, 0.03em, $primary-title-color);
-
+  @include for-tablet-up{
+    font-size: 20px;
+  }
 }  
 
 .modal__label {
@@ -115,26 +124,20 @@
 
 .modal__text {
   margin-bottom: 20px;
-  @include font-silo(700, 12px, 1.43, 0.08em, $additional-text-color);
+  @include font-silo(700, 12px, 1.43, 0.02em, $additional-text-color);
 
 }
 
-.modal-btn {
-  bacground-color:$accent-color;
-
+.modal__btn--submit {
+  display: inline-block;
+ 
   padding: 14px 7px;
   min-width: 260px;
   height: 48px;
 
   @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
   text-transform: uppercase;
-  background-color: transparent;
-  border-color: $accent-color;
+  background-color: $accent-color;
   
-  &:hover,
-    &:focus {
-      fill: $accent-color;
-      transform: scale(1.7) rotate(90deg);
-    }
- 
+
 }
