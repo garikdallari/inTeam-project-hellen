@@ -76,6 +76,7 @@
 
   @include for-desktop-up {
     max-width: 642px;
+    z-index: 1;
   }
 }
 
@@ -127,13 +128,14 @@
 }
 
 .hero__btn {
-  display: inline-block;
   background-color: $accent-color;
-
-  align-self: center;
-
-  @include for-tablet-up {
-    display: inline-block;
+  @include centeredFlex;
+  transition: 250ms all ease-out;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: #fff;
+    border: 1px solid $accent-color;
   }
 }
 
