@@ -8,7 +8,7 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: $modal-bg-color;
 
   opacity: 1;
 
@@ -40,7 +40,11 @@
   padding: 40px;
 
 
+  justify-content: center;
+
+
   @include transition2(transform, opacity);
+
   transform: translate(-50%, -50%) scale(1);
 
   @include for-tablet-up {
