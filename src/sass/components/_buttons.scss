@@ -8,8 +8,6 @@
   background-color: transparent;
   border-color: $accent-color;
 
- 
-
   @include for-desktop-up {
     padding: 26px 25px;
     min-width: 354px;
@@ -21,7 +19,8 @@
     @include transition2(color, backgound-color);
   }
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $bg-black-color;
     background-color: $accent-color;
     border: 2px $bg-black-color solid;

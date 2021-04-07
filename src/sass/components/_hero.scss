@@ -128,13 +128,12 @@
 
 .hero__btn {
   display: inline-block;
- 
-  
+  background-color: $accent-color;
+
   align-self: center;
 
   @include for-tablet-up {
     display: inline-block;
-   
   }
 }
 
@@ -149,7 +148,7 @@
 
     left: 0;
     top: 0;
-    
+
     transform: translateX(374px) translateY(171px);
   }
 
