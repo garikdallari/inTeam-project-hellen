@@ -239,3 +239,27 @@
     transform: translateX(-30px);
   }
 }
+.button-up {
+  position: fixed;
+  bottom: 50px;
+  right: 15px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  color: $accent-color;
+}
+
+.icon-button-up {
+  fill: currentColor;
+  width: 40px;
+  height: 40px;
+  transition: 250ms transform ease-out;
+
+  @media screen and (max-width: 1343px) {
+    display: none;
+  }
+
+  &:hover {
+    transform: scale(1.04);
+  }
+}
