@@ -247,15 +247,16 @@
   display: block;
   width: 40px;
   height: 40px;
-
   color: $accent-color;
-  border-radius: 50%;
-  background-color: $accent-color;
-
 }
 
 .icon-button-up {
   fill: currentColor;
   width: 40px;
   height: 40px;
+  transition: 250ms transform ease-out;
+
+  &:hover {
+    transform: scale(1.04);
+  }
 }
