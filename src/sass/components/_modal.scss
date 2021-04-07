@@ -24,6 +24,8 @@
   }
 }
 
+
+
 .modal {
   position: absolute;
   top: 50%;
@@ -39,12 +41,23 @@
 
   transform: translate(-50%, -50%) scale(1) rotate(360deg);
 
+  @include for-tablet-up {
+    width: 500px;
+    min-height: 600px;
+  }
+
+  @include for-desktop-up {
+   
+  }
 }
 
 .modal__btn--close {
   border: none;
   border-color: transparent;
- 
+  fill: $primary-title-color;
+  width: 40px;
+  margin-left: auto;
+  background-color:transparent;
 }
 
 .modal-form {
