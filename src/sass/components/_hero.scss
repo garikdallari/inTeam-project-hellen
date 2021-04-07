@@ -127,9 +127,15 @@
 }
 
 .hero__btn {
-  display: inline-block;
   background-color: $accent-color;
-  text-align: center;
+  @include centeredFlex;
+  transition: 250ms all ease-out;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: #fff;
+    border: 1px solid $accent-color;
+  }
 }
 
 .hero-thumb {

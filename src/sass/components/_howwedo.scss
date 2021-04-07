@@ -15,6 +15,7 @@
 .howwedo__tittle {
   @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
   text-align: center;
+  margin-top: 16px;
   margin-bottom: 30px;
 
   @include for-tablet-up {
@@ -56,7 +57,7 @@
       margin-bottom: 20px;
     }
   }
-  
+
   @include for-tablet-up {
     max-width: 334px;
     margin-top: 27px;
@@ -110,7 +111,7 @@
   height: 2px;
   background-color: $accent-color;
   transform: scaleX(1);
-  @include transition (transform);
+  @include transition(transform);
 
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {

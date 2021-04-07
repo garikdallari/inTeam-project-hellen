@@ -1,4 +1,3 @@
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -13,7 +12,7 @@
 
   opacity: 1;
 
-  @include transition (opacity, 500ms, 250ms);
+  @include transition(opacity, 500ms, 250ms);
 
   &.is-hidden {
     opacity: 0;
@@ -21,12 +20,10 @@
     visibility: visible;
   }
 
-  &.is-hidden .modal { 
-    transform: translate(-50%, -50%) scale(0.1); 
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
   }
 }
-
-
 
 .modal {
   position: absolute;
@@ -48,7 +45,6 @@
     width: 500px;
     min-height: 600px;
   }
-
 }
 
 .modal-head {
@@ -59,7 +55,6 @@
 
 .modal__logo {
   display: inline-block;
- 
 }
 
 .modal__btn--close {
@@ -70,15 +65,15 @@
   width: 40px;
   margin-left: auto;
   background-color: transparent;
-  align-items:center;
+  align-items: center;
   justify-content: center;
 
   @include transition2(transform, color);
-  
-    &:hover,
-    &:focus {
-        fill: $accent-color;
-        transform: scale(1.7) rotate(90deg);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transform: scale(1.7) rotate(90deg);
   }
 }
 
@@ -88,15 +83,15 @@
 }
 
 .modal__title {
-  margin:0;
+  margin: 0;
   margin-bottom: 30px;
-  
+
   text-align: center;
   @include font-silo(800, 30px, 1.8, 0.03em, $primary-title-color);
-  @include for-tablet-up{
+  @include for-tablet-up {
     font-size: 20px;
   }
-}  
+}
 
 .modal__label {
   margin-bottom: 10px;
@@ -108,7 +103,7 @@
   padding-left: 30px;
 
   width: 100%;
-  
+
   border: 1px solid $bg-black-color;
   border-radius: 4px;
 
@@ -117,7 +112,7 @@
   &:last-child {
     margin-bottom: 40px;
   }
- 
+
   &:focus {
     border: 1px solid $accent-color;
     outline: none;
@@ -127,19 +122,17 @@
 .modal__text {
   margin-bottom: 20px;
   @include font-silo(700, 12px, 1.43, 0.02em, $additional-text-color);
-
 }
-
-.modal__btn--submit {
-  display: inline-block;
- 
-  padding: 14px 7px;
-  min-width: 260px;
-  height: 48px;
-
-  @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
-  text-transform: uppercase;
+.modal-btn {
+  width: 100%;
   background-color: $accent-color;
-  
-
+  @include centeredFlex;
+  transition: 250ms all ease-out;
+  border: none;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: #fff;
+    border: 1px solid $accent-color;
+  }
 }
