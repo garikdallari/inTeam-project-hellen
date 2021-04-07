@@ -16,6 +16,8 @@
 
   transform: translateX(110%);
 
+  @include transition (transform);
+
   @include for-tablet-up {
     padding: 42px 40px;
   }
@@ -36,6 +38,8 @@
 }
 
 .mobile__logo {
+  @include transition(transform);
+
   &--white {
     @include for-tablet-up {
       display: none;
@@ -49,6 +53,11 @@
       display: flex;
     }
   }
+
+  &:hover,
+  &:focus {
+    transform: scale(1.2);
+  }
 }
 
 .mobile-menu__btn--close {
@@ -60,9 +69,13 @@
   background-color: transparent;
   fill: $secondary-title-color;
 
+  @include transition2(transform, color);
+
   &:hover,
   &:focus {
     fill: $accent-color;
+
+    transform: scale(1.7) rotate(90deg);
   }
 }
 
@@ -84,7 +97,11 @@
 }
 
 .mobile-nav_link {
+  display: block;
+
   @include font-silo(800, 20px, 1.8, 0.03em, $secondary-title-color);
+
+  @include transition2 (color, transform);
 
   @include for-tablet-up {
     font-size: 26px;
@@ -93,6 +110,8 @@
   &:hover,
   &:focus {
     color: $accent-color;
+
+    transform: scale(1.1);
   }
 }
 
