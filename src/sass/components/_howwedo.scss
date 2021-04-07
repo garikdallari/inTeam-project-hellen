@@ -15,6 +15,7 @@
 .howwedo__tittle {
   @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
   text-align: center;
+  margin-top: 16px;
   margin-bottom: 30px;
 
   @include for-tablet-up {
@@ -24,6 +25,7 @@
   @include for-desktop-up {
     @include font-silo(800, 46px, 130%, 0.03em, $primary-title-color);
     text-align: start;
+    margin-bottom: 50px;
   }
 }
 
