@@ -76,6 +76,7 @@
 
   @include for-desktop-up {
     max-width: 642px;
+    z-index: 1;
   }
 }
 
