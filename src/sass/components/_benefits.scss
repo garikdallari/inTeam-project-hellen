@@ -239,7 +239,6 @@
     transform: translateX(-30px);
   }
 }
-
 .button-up {
   position: fixed;
   bottom: 50px;
@@ -255,6 +254,10 @@
   width: 40px;
   height: 40px;
   transition: 250ms transform ease-out;
+
+  @media screen and (max-width: 1343px) {
+    display: none;
+  }
 
   &:hover {
     transform: scale(1.04);
