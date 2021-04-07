@@ -188,31 +188,14 @@ color: $accent-color;
     background-color: $error-color;
   }
 
-  .btn {
-    padding: 14px 7px;
-    min-width: 260px;
-    height: 48px;
-  
-    @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
-    text-transform: uppercase;
-    background-color: $accent-color;
-    border-color: transparent;
-  
-    @include for-desktop-up {
-      padding: 26px 25px;
-      min-width: 354px;
-      height: 70px;
-  
-      @include font-silo(700, 14px, 1.21, 0.14em, $secondary-title-color);
-    }
-  }
-
     .btn--differences {
-  display: flex;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 50px;
+      background-color: $accent-color;
+      display: flex;
+      align-items: center;
+      margin: 0;
+      margin-right: auto;
+      margin-left: auto;
+      margin-top: 50px;
   
   @media screen and (min-width: 768px) {
     margin-top: 31px;
