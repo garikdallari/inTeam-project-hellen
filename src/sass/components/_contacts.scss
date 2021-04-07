@@ -151,6 +151,18 @@ color: $accent-color;
     background-color: transparent;
     border-color: $secondary-title-color;
 
+    @include transition(all, 250ms);
+
+    &:hover {
+      border-color: $accent-color;
+      outline: none;
+    }
+    
+    &:focus {
+      outline: 2px solid $accent-color;
+      border-color: none;
+    }
+
     &::placeholder {
       color: $secondary-title-color;
       font-family: 'Montserrat', sans-serif;
