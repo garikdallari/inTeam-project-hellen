@@ -48,12 +48,15 @@
   text-align: center;
   box-shadow: 0px 8px 26px rgba(0, 0, 0, 0.1);
   padding: 30px 18px 26px 18px;
-  @media screen and (max-width: 767px) {
+
+  @include transition2(color, background-color);
+
+  @include for-phone-only {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
-
+  
   @include for-tablet-up {
     max-width: 334px;
     margin-top: 27px;
@@ -107,7 +110,7 @@
   height: 2px;
   background-color: $accent-color;
   transform: scaleX(1);
-  transition: 250ms transform ease-in-out;
+  @include transition (transform);
 
   .howwedo-list__item:hover &,
   .howwedo-list__item:focus & {
