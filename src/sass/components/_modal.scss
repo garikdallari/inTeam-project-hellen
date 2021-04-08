@@ -107,6 +107,11 @@
   @include font-silo(600, 20px, 1.66, 0.03em, $additional-text-color);
 }
 
+.modal__label:hover .modal__input,
+.modal__label:focus .modal__input {
+  color: $accent-color;
+}
+
 .modal__input {
   padding: 10px;
   padding-left: 30px;
@@ -118,6 +123,9 @@
 
   margin-bottom: 20px;
 
+  @include transition(border-color, 250ms, 0ms);
+
+  &:hover,
   &:focus {
     border: 1px solid $accent-color;
     outline: none;

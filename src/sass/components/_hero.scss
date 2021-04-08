@@ -3,8 +3,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -64px;
- 
-  
+
   background-image: url(../images/images-mobile/hero-mobile-bg.png);
 
   @media screen and (min-device-pixel-ratio: 2),
@@ -13,10 +12,9 @@
     background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
   }
 
-  
   @include for-tablet-up {
     background-position-x: 0;
-  
+
     background-size: cover;
     background-image: url(../images/images-tablet/hero-tablet-bg.png);
 
@@ -27,15 +25,16 @@
     }
   }
 
-  @include for-desktop-up { background-size: cover;
+  @include for-desktop-up {
+    background-size: cover;
     background-position: 0;
-  
+
     background-image: url(../images/images-desktop/hero-desktop-bg.png);
-  
+
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-        background-image: url(../images/images-desktop/hero-desktop-bg@2x.png);
+      background-image: url(../images/images-desktop/hero-desktop-bg@2x.png);
     }
   }
 }
@@ -45,7 +44,7 @@
   padding-top: 109px;
   padding-bottom: 47px;
   min-height: 618px;
-  
+
   @include for-tablet-up {
     display: flex;
     flex-direction: column;
@@ -54,7 +53,6 @@
     padding-bottom: 92px;
 
     min-height: 556px;
-    
   }
 
   @include for-desktop-up {
@@ -62,7 +60,6 @@
     padding-bottom: 145px;
 
     min-height: 878px;
-  
   }
 }
 
@@ -129,16 +126,18 @@
 }
 
 .hero__btn {
- 
+  display: flex;
+  align-items: center;
   margin-left: auto;
   margin-right: auto;
-  
+
   background-color: $accent-color;
-  
+  border: 1px solid transparent;
+
   transition: 250ms all ease-out;
- 
+
   @include for-tablet-up {
-    margin:0;
+    margin: 0;
   }
 
   &:hover,
@@ -160,7 +159,7 @@
 
     left: 0;
     top: 0;
-    background-size:  190px 230px;
+    background-size: 190px 230px;
     transform: translateX(374px) translateY(171px);
   }
 
@@ -168,14 +167,13 @@
     height: 600px;
     width: 700px;
     transform: translateX(608px) translateY(150px);
-    background-size:  320px 375px;
+    background-size: 320px 375px;
   }
 
   @include for-1680-up {
     height: 718px;
     width: 842px;
- }
- 
+  }
 }
 
 .hero__img {
@@ -184,4 +182,3 @@
   width: 100%;
   object-fit: contain;
 }
-
