@@ -19,7 +19,6 @@
 }
 
 .advantages__list {
-  background-color: teal;
   margin-right: auto;
   margin-left: auto;
 
@@ -37,7 +36,6 @@
 }
 
 .advantages__item {
-  outline: 1px solid red;
   @include centeredFlex;
   position: relative;
   margin-left: auto;
