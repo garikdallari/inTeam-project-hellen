@@ -1,5 +1,5 @@
 .hero {
- width: 100vw;
+ 
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -64px;
@@ -21,12 +21,12 @@
     background-size: contain;
     
     
-    background-image: url(../images/images-desktop/hero-desktop-bg.png);
+    background-image: url(../images/images-tablet/hero-tablet-bg.png);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url(../images/images-desktop/hero-desktop-bg@2x.png);
+      background-image: url(../images/images-tablet/hero-tablet-bg@2x.png);
     }
   }
 
@@ -147,7 +147,7 @@
   &:hover,
   &:focus {
     color: $accent-color;
-    background-color: #fff;
+    background-color: $secondary-title-color;
     border: 1px solid $accent-color;
   }
 }
@@ -168,10 +168,16 @@
   }
 
   @include for-desktop-up {
-    height: 718px;
-    width: 842px;
+    height: 600px;
+    width: 700px;
     transform: translateX(608px) translateY(150px);
   }
+
+  @include for-1680-up {
+    height: 718px;
+    width: 842px;
+ }
+
 }
 
 .hero__img {
