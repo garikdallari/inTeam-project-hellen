@@ -20,8 +20,8 @@
     visibility: visible;
   }
 
-  &.is-hidden .modal { 
-    transform: translate(-50%, -50%) scale(0); 
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
 }
@@ -32,24 +32,30 @@
   left: 50%;
 
   background-color: $secondary-title-color;
-  
+
   border-radius: 4px;
   min-width: 310px;
-  min-height: 450px;
-  max-width: 95vw;
-  max-height: 95vh;
+
+  max-width: 80vw;
+  max-height: 90vh;
   padding: 25px;
-  
+
+  overflow-y: auto;
+  overflow-x: auto;
+  @media screen and (min-width: 480px) {
+    max-width: 460px;
+  }
 
   @include transition2(transform, opacity);
 
   transform: translate(-50%, -50%) scale(1);
 
   @media screen and (min-width: 768px) {
-    max-width: 600px;
-    max-height: 80vh;
-    min-height: 510px;
-
+    max-width: 550px;
+    max-height: 95vh;
+  }
+  @media screen and (min-width: 1344px) {
+    max-width: 30vw;
   }
 }
 
@@ -65,6 +71,7 @@
   border-color: transparent;
   fill: $primary-title-color;
   width: 40px;
+  height: 40px;
   margin-left: auto;
   background-color: transparent;
   align-items: center;
@@ -76,6 +83,9 @@
   &:focus {
     fill: $accent-color;
     transform: scale(1.7) rotate(90deg);
+    outline: none;
+    border-radius: 50%;
+    border: 1px solid $accent-color;
   }
 }
 
@@ -125,15 +135,13 @@
   text-align: center;
   margin-bottom: 20px;
   @include font-silo(700, 15px, 1.43, 0.02em, $additional-text-color);
-  
+
   @include for-tablet-up {
     margin-bottom: 40px;
   }
-
 }
 
 .modal-btn {
-  
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -155,6 +163,5 @@
     color: $accent-color;
     background-color: #fff;
     border: 1px solid $accent-color;
-
   }
 }
