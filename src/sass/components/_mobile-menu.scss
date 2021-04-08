@@ -98,6 +98,10 @@
     &:focus {
       fill: $accent-color;
       transform: scale(1.7) rotate(90deg);
+      outline:none;
+      border-radius:50%;
+      border: 1px solid $accent-color;
+   
     }
   }
 }

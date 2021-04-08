@@ -69,6 +69,7 @@
   border-color: transparent;
   fill: $primary-title-color;
   width: 40px;
+  height: 40px;
   margin-left: auto;
   background-color: transparent;
   align-items: center;
@@ -80,7 +81,13 @@
   &:focus {
     fill: $accent-color;
     transform: scale(1.7) rotate(90deg);
+    outline:none;
+    border-radius:50%;
+    border: 1px solid $accent-color;
+   
   }
+
+  
 }
 
 .modal__title {
