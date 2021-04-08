@@ -32,7 +32,7 @@
   left: 50%;
 
   background-color: $secondary-title-color;
-  border: 4px solid $accent-color;
+  
   border-radius: 4px;
 
   width: 320px;
@@ -40,14 +40,11 @@
   padding: 40px;
 
 
-  justify-content: center;
-
-
   @include transition2(transform, opacity);
 
   transform: translate(-50%, -50%) scale(1);
 
-  @include for-tablet-up {
+  @media screen and (min-width: 480px) {
     width: 500px;
     min-height: 600px;
   }
@@ -57,10 +54,6 @@
   display: flex;
   align-items: center;
   margin-bottom: 40px;
-}
-
-.modal__logo {
-  display: inline-block;
 }
 
 .modal__btn--close {
@@ -83,25 +76,21 @@
   }
 }
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
-}
-
 .modal__title {
   margin: 0;
   margin-bottom: 30px;
 
   text-align: center;
-  @include font-silo(800, 30px, 1.8, 0.03em, $primary-title-color);
-  @include for-tablet-up {
-    font-size: 20px;
+  @include font-silo(800, 20px, 1.8, 0.03em, $primary-title-color);
+
+  @media screen and (min-width: 480px) {
+    font-size: 30px;
   }
 }
 
 .modal__label {
   margin-bottom: 10px;
-  @include font-silo(500, 20px, 1.66, 0.03em, $additional-text-color);
+  @include font-silo(600, 20px, 1.66, 0.03em, $additional-text-color);
 }
 
 .modal__input {
@@ -115,10 +104,6 @@
 
   margin-bottom: 20px;
 
-  &:last-child {
-    margin-bottom: 40px;
-  }
-
   &:focus {
     border: 1px solid $accent-color;
     outline: none;
@@ -126,19 +111,32 @@
 }
 
 .modal__text {
-  margin-bottom: 20px;
-  @include font-silo(700, 12px, 1.43, 0.02em, $additional-text-color);
+
+  text-align: center;
+  margin-bottom: 40px;
+  @include font-silo(700, 15px, 1.43, 0.02em, $additional-text-color);
 }
+
 .modal-btn {
-  width: 100%;
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 7px;
+  align-self: center;
+  width: 260px;
+  height: 48px;
+  @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
   background-color: $accent-color;
-  @include centeredFlex;
+  text-transform: uppercase;
   transition: 250ms all ease-out;
   border: none;
+
   &:hover,
   &:focus {
     color: $accent-color;
     background-color: #fff;
     border: 1px solid $accent-color;
+
   }
 }
