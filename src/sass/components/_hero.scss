@@ -1,5 +1,5 @@
 .hero {
- 
+  justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: -64px;
@@ -150,10 +150,11 @@
 }
 
 .hero-thumb {
-  position: absolute;
+  
   height: 178px;
-
+  
   @include for-tablet-up {
+    position: absolute;
     height: 320px;
     width: 375px;
 
@@ -182,6 +183,5 @@
   height: 100%;
   width: 100%;
   object-fit: contain;
-  
 }
 
