@@ -36,7 +36,6 @@
   @include font-silo (800, 20px, 1.36, 0.03em, $secondary-title-color);
 
   @include for-phone-only {
-    min-width: 320px;
     padding-bottom: 50px;
   }
 
