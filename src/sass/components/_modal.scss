@@ -1,4 +1,3 @@
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -9,9 +8,11 @@
   width: 100%;
   height: 100%;
 
-  background-color: rgba(0, 0, 0, 0.747);
+  background-color: $modal-bg-color;
 
   opacity: 1;
+
+  @include transition(opacity, 500ms, 250ms);
 
   &.is-hidden {
     opacity: 0;
@@ -20,7 +21,8 @@
   }
 
   &.is-hidden .modal { 
-    transform: translate(-50%, -50%) scale(0.1); 
+    transform: translate(-50%, -50%) scale(0); 
+    opacity: 0;
   }
 }
 
@@ -30,65 +32,129 @@
   left: 50%;
 
   background-color: $secondary-title-color;
-  border: 4px solid $accent-color;
+  
   border-radius: 4px;
+  min-width: 310px;
+  min-height: 450px;
+  max-width: 95vw;
+  max-height: 95vh;
+  padding: 25px;
+  
 
-  width: 320px;
-  min-height: 300px;
-  padding: 40px;
+  @include transition2(transform, opacity);
 
-  transform: translate(-50%, -50%) scale(1) rotate(360deg);
+  transform: translate(-50%, -50%) scale(1);
 
+  @media screen and (min-width: 768px) {
+    max-width: 600px;
+    max-height: 80vh;
+    min-height: 510px;
+
+  }
+}
+
+.modal-head {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .modal__btn--close {
+  display: flex;
   border: none;
   border-color: transparent;
- 
-}
+  fill: $primary-title-color;
+  width: 40px;
+  margin-left: auto;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
 
-.modal-form {
-  display: flex;
-  flex-direction: column;
+  @include transition2(transform, color);
+
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    transform: scale(1.7) rotate(90deg);
+  }
 }
 
 .modal__title {
   margin: 0;
-  
+  margin-bottom: 30px;
+
   text-align: center;
-  font-size: 25px;
+  @include font-silo(800, 20px, 1.8, 0.03em, $primary-title-color);
 
-}  
-
-.input-wrapper {
-  position: relative;
-  margin-bottom: 10px;
+  @media screen and (min-width: 768px) {
+    font-size: 30px;
+  }
 }
 
-.modal__icon {
-  position: absolute;
-  left: 0;
-  top: 0;
-  
+.modal__label {
+  margin-bottom: 10px;
+  @include font-silo(600, 20px, 1.66, 0.03em, $additional-text-color);
+}
+
+.modal__label:hover .modal__input,
+.modal__label:focus .modal__input {
+  color: $accent-color;
 }
 
 .modal__input {
-  
+  padding: 10px;
+  padding-left: 30px;
 
   width: 100%;
-  
-  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  border: 1px solid $bg-black-color;
   border-radius: 4px;
- 
-    
+
+  margin-bottom: 20px;
+
+  @include transition(border-color, 250ms, 0ms);
+
+  &:hover,
   &:focus {
     border: 1px solid $accent-color;
     outline: none;
   }
-  
-  &:focus+.modal__icon {
-    fill:$accent-color;
-  }
 }
 
+.modal__text {
+  text-align: center;
+  margin-bottom: 20px;
+  @include font-silo(700, 15px, 1.43, 0.02em, $additional-text-color);
+  
+  @include for-tablet-up {
+    margin-bottom: 40px;
+  }
 
+}
+
+.modal-btn {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 7px;
+  align-self: center;
+  width: 260px;
+  height: 48px;
+
+  @include font-silo(700, 12px, 1.21, 0.08em, $secondary-title-color);
+
+  background-color: $accent-color;
+  text-transform: uppercase;
+  transition: 250ms all ease-out;
+  border: none;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: #fff;
+    border: 1px solid $accent-color;
+
+  }
+}

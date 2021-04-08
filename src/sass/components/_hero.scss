@@ -1,16 +1,6 @@
-.hero-container {
-  position: relative;
-  padding-top: 109px;
-  padding-bottom: 47px;
-  min-height: 618px;
-
-  background-repeat: no-repeat;
-  background-size: cover;
-
+.hero {
   background-size: cover;
   background-repeat: no-repeat;
-
-  background-position-y: 40px;
   background-position-x: -64px;
 
   background-image: url(../images/images-mobile/hero-mobile-bg.png);
@@ -21,22 +11,10 @@
     background-image: url(../images/images-mobile/hero-mobile-bg@2x.png);
   }
 
-  background-position-x: -64px;
-
   @include for-tablet-up {
     background-position-x: 0;
-  }
 
-  @include for-tablet-up {
-    background-position: 0;
-
-    display: flex;
-    flex-direction: column;
-
-    padding-top: 158px;
-    padding-bottom: 92px;
-
-    min-height: 556px;
+    background-size: cover;
     background-image: url(../images/images-tablet/hero-tablet-bg.png);
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -47,11 +25,6 @@
   }
 
   @include for-desktop-up {
-    padding-top: 228px;
-    padding-bottom: 145px;
-
-    min-height: 878px;
-
     background-size: cover;
     background-position: 0;
 
@@ -62,6 +35,30 @@
       screen and (min-resolution: 2dppx) {
       background-image: url(../images/images-desktop/hero-desktop-bg@2x.png);
     }
+  }
+}
+
+.hero-container {
+  position: relative;
+  padding-top: 109px;
+  padding-bottom: 47px;
+  min-height: 618px;
+
+  @include for-tablet-up {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 158px;
+    padding-bottom: 92px;
+
+    min-height: 556px;
+  }
+
+  @include for-desktop-up {
+    padding-top: 228px;
+    padding-bottom: 145px;
+
+    min-height: 878px;
   }
 }
 
@@ -76,6 +73,7 @@
 
   @include for-desktop-up {
     max-width: 642px;
+    z-index: 1;
   }
 }
 
@@ -127,40 +125,58 @@
 }
 
 .hero__btn {
-  display: inline-block;
-  background-color: $accent-color;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
-  align-self: center;
+  background-color: $accent-color;
+  border: 1px solid transparent;
+
+  transition: 250ms all ease-out;
 
   @include for-tablet-up {
-    display: inline-block;
+    margin: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $secondary-title-color;
+    border: 1px solid $accent-color;
   }
 }
 
 .hero-thumb {
   position: absolute;
-
   height: 178px;
-
+  
   @include for-tablet-up {
     height: 320px;
     width: 375px;
 
     left: 0;
     top: 0;
-
+    background-size: 190px 230px;
     transform: translateX(374px) translateY(171px);
   }
 
   @include for-desktop-up {
+    height: 600px;
+    width: 700px;
+    transform: translateX(608px) translateY(150px);
+    background-size: 320px 375px;
+  }
+
+  @include for-1680-up {
     height: 718px;
     width: 842px;
-    transform: translateX(608px) translateY(150px);
   }
 }
 
 .hero__img {
+  display: block;
   height: 100%;
-  width: 800px;
+  width: 100%;
   object-fit: contain;
 }

@@ -31,7 +31,7 @@
   }
 
   @include for-desktop-up {
-    width: 1344px;
+    width: 1314px;
   }
 }
 
@@ -46,6 +46,7 @@
   }
 
   @include for-desktop-up {
+    width: 438px;
     height: 102px;
     margin-left: 0px;
     margin-right: 0px;

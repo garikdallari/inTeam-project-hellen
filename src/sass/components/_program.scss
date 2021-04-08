@@ -1,12 +1,6 @@
 .program {
   background-color: $bg-black-color;
   overflow: hidden;
-}
-
-.container--program {
-  padding-top: 50px;
-  padding-bottom: 133px;
-  margin: 0 auto;
 
   @include for-phone-only {
     background: {
@@ -43,11 +37,11 @@
 
   @include for-desktop-up {
     min-width: 1344px;
-    padding: 120px 15px 234px;
+    padding: 120px 15px 262px;
 
     background: {
       image: url(../images/images-desktop/program-desktop.png);
-      position: bottom 34px left 0;
+      position: bottom 60px left 0;
       repeat: no-repeat;
       size: 540px 402px;
     }
@@ -69,6 +63,16 @@
       size: 674px 502px;
       position: bottom 60px left 0;
     }
+  }
+}
+
+.container--program {
+  padding-top: 50px;
+  padding-bottom: 133px;
+  margin: 0 auto;
+
+  @include for-tablet-up {
+    padding-bottom: 0;
   }
 }
 
@@ -303,7 +307,7 @@
   top: 10px;
   left: 0;
   width: 1px;
-  height: 92%;
+  height: 93%;
   border-left: 1px solid $secondary-title-color;
 
   @include for-tablet-up {
