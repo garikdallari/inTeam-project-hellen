@@ -149,10 +149,11 @@
 }
 
 .hero-thumb {
-  position: absolute;
+  
   height: 178px;
 
   @include for-tablet-up {
+    position: absolute;
     height: 320px;
     width: 375px;
 

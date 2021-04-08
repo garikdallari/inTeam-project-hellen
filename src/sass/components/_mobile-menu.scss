@@ -1,3 +1,5 @@
+
+
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -13,6 +15,9 @@
   height: 100vh;
   min-width: 100%;
   background: rgba(17, 21, 24, 0.9);
+
+  overflow-y: scroll;
+  overflow-x: scroll;
 
   transform: translateX(110%);
 
@@ -93,6 +98,10 @@
     &:focus {
       fill: $accent-color;
       transform: scale(1.7) rotate(90deg);
+      outline:none;
+      border-radius:50%;
+      border: 1px solid $accent-color;
+   
     }
   }
 }
