@@ -74,69 +74,6 @@
   @include for-tablet-up {
     padding-bottom: 0;
   }
-
-  // @include for-phone-only {
-  //   background: {
-  //     image: url(../images/images-mobile/program-mobile.png);
-  //     repeat: no-repeat;
-  //     size: 120px 137px;
-  //     position: bottom 33px right 0;
-  //   }
-
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/images-mobile/program-mobile@2x.png);
-  //   }
-  // }
-
-  // @include for-desktop-up {
-  //   padding-top: 60px;
-    // padding-bottom: 262px;
-
-  //   background: {
-  //     image: url(../images/images-tablet/program-tablet.png);
-  //     position: bottom 111px right 0;
-  //     repeat: no-repeat;
-  //     size: 384px 280px;
-    // }
-
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/images-tablet/program-tablet@2x.png);
-  //   }
-  // }
-
-  // @include for-desktop-up {
-  //   min-width: 1344px;
-  //   padding: 120px 15px 234px;
-
-  //   background: {
-  //     image: url(../images/images-desktop/program-desktop.png);
-  //     position: bottom 34px left 0;
-  //     repeat: no-repeat;
-  //     size: 540px 402px;
-  //   }
-
-  //   @media screen and (min-device-pixel-ratio: 2),
-  //     screen and (min-resolution: 192dpi),
-  //     screen and (min-resolution: 2dppx) {
-  //     background-image: url(../images/images-desktop/program-desktop@2x.png);
-  //   }
-  // }
-
-  // @include for-1680-up {
-  //   min-width: 1680px;
-  //   padding-left: 183px;
-  //   padding-right: 183px;
-  //   padding-bottom: 363px;
-  //   background: {
-  //     repeat: no-repeat;
-  //     size: 674px 502px;
-  //     position: bottom 60px left 0;
-  //   }
-  // }
 }
 
 .program__title {
@@ -370,7 +307,7 @@
   top: 10px;
   left: 0;
   width: 1px;
-  height: 92%;
+  height: 93%;
   border-left: 1px solid $secondary-title-color;
 
   @include for-tablet-up {
