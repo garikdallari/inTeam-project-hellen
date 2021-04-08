@@ -2,9 +2,7 @@
   padding: 50px 0px;
 
   @include for-desktop-up {
-    padding: 130px 0px;
-
-    padding-top: 280px;
+    padding: 280px 0px 130px;
   }
 }
 
@@ -15,7 +13,7 @@
 .howwedo__tittle {
   @include font-silo(800, 20px, 130%, 0.03em, $primary-title-color);
   text-align: center;
-  margin-top: 16px;
+  margin-top: 0;
   margin-bottom: 30px;
 
   @include for-tablet-up {
