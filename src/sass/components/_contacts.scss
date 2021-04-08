@@ -167,6 +167,8 @@
       align-items: center;
       letter-spacing: 0.08em;
 
+      @include transition(color);
+
       @media screen and (min-width: 1344px) {
         font-size: 20px;
         line-height: 24px;
@@ -190,6 +192,11 @@
     padding-left: 40px;
     margin-bottom: 30px;
   }
+}
+
+.contacts-form__input:hover::placeholder,
+.contacts-form__input:focus::placeholder {
+  color: $accent-color;
 }
 
 .contacts-form__input:valid {
