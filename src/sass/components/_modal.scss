@@ -24,6 +24,7 @@
     transform: translate(-50%, -50%) scale(0); 
     opacity: 0;
   }
+  
 }
 
 .modal {
@@ -35,20 +36,23 @@
   
   border-radius: 4px;
   min-width: 310px;
-  min-height: 450px;
-  max-width: 95vw;
-  max-height: 95vh;
-  padding: 25px;
   
+
+  max-width: 80%;
+  max-height: 80%;
+  padding: 25px;
+   
+  overflow-y: scroll;
+  overflow-x: scroll;
 
   @include transition2(transform, opacity);
 
   transform: translate(-50%, -50%) scale(1);
 
   @media screen and (min-width: 768px) {
-    max-width: 600px;
-    max-height: 80vh;
-    min-height: 510px;
+    max-width: 50vh;
+    // max-height: 80vh;
+    min-height:450px ;
 
   }
 }
@@ -65,6 +69,7 @@
   border-color: transparent;
   fill: $primary-title-color;
   width: 40px;
+  height: 40px;
   margin-left: auto;
   background-color: transparent;
   align-items: center;
@@ -76,7 +81,13 @@
   &:focus {
     fill: $accent-color;
     transform: scale(1.7) rotate(90deg);
+    outline:none;
+    border-radius:50%;
+    border: 1px solid $accent-color;
+   
   }
+
+  
 }
 
 .modal__title {
@@ -158,3 +169,5 @@
 
   }
 }
+
+
